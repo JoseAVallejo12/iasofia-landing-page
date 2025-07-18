@@ -1,0 +1,21 @@
+<div class="clock">
+
+  <div class="center-cap">
+    <div class="inner-circle"></div>
+  </div>
+
+  <div class="hand hour" [ngStyle]="{ transform: 'rotate(' + hourDeg + 'deg)' }"></div>
+  <div class="hand minute" [ngStyle]="{ transform: 'rotate(' + minuteDeg + 'deg)' }"></div>
+  <div class="hand second" [ngStyle]="{ transform: 'rotate(' + secondDeg + 'deg)' }"></div>
+
+
+
+  <div *ngFor="let numeral of romanNumerals; let i = index"
+       [ngStyle]="{ color: ['XII', 'III', 'VI', 'IX'].includes(numeral) ? '#152c4e' : '#8e97a2'}"
+       class="number"
+       [style.transform]="'rotate(' + (i * 30) + 'deg)'"
+  >
+    <span [style.transform]="'rotate(-' + (i * 30) + 'deg)'">{{ numeral }}</span>
+  </div>
+
+</div>
