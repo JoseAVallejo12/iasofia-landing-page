@@ -4,6 +4,7 @@ import {interval, Subscription} from "rxjs";
 import {AnalogClockComponent} from "../components/analog-clock/analog-clock.component";
 import {FormControl, ReactiveFormsModule, Validators} from "@angular/forms";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
+import Swal from 'sweetalert2'
 
 @Component({
   selector: "under-construction-view",
@@ -26,6 +27,7 @@ export class UnderConstructionComponent {
   timerSub!: Subscription;
   email = new FormControl('', [Validators.email, Validators.required]);
   private readonly releaseDate = new Date('2025-10-15T10:00:00');
+  emailSend: boolean = false
 
   constructor(private http: HttpClient) {
   }
@@ -60,14 +62,31 @@ export class UnderConstructionComponent {
     const body = {
       email: this.email.value,
     }
+  this.emailSend = true;
     this.http.post('https://send-email.josealfredovallejo25.workers.dev', body).subscribe({
       next: (res) => {
+        Swal.fire({
+          icon: "success",
+          text: 'email sent successfully',
+          title: 'success',
+        }).then(() => this.enableSendEmail());
         console.log({res})
       },
       error: err => {
-        console.log(err);
+        this.email.reset();
+        Swal.fire({
+          icon: "error",
+          text: 'Error sending email',
+          title: 'error',
+        }).then(() => this.enableSendEmail());
       }
     })
     console.log(this.email.value);
+  }
+
+  private enableSendEmail() {
+    setTimeout(() => {
+      this.emailSend = false;
+    }, 5000)
   }
 }

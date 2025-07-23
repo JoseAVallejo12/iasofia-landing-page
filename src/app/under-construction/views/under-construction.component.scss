@@ -4,4 +4,7 @@
 input.ng-touched.ng-invalid {
   border: 1px solid #f59e0b;
 }
-
+.disabled {
+  pointer-events: none;
+  background: #30cfd0;
+}

@@ -58,8 +58,8 @@
         <!-- Newsletter Signup -->
         <div class="max-w-md mx-auto md:mx-0">
           <div class="flex flex-row gap-5">
-            <input [formControl]="email" placeholder="Enter your email" class="text-white placeholder-indigo-200 flex-grow px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white/10 backdrop-blur-sm border border-white/20">
-            <button (click)="enviarEmail()" type="submit" class="text-white px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 rounded-lg font-medium transition-all duration-200 whitespace-nowrap">
+            <input [ngClass]="{'disabled': emailSend}" [formControl]="email" placeholder="Enter your email" class="text-white placeholder-indigo-200 flex-grow px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white/10 backdrop-blur-sm border border-white/20">
+            <button [ngClass]="{'disabled': emailSend}" (click)="enviarEmail()" type="submit" class="text-white px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 rounded-lg font-medium transition-all duration-200 whitespace-nowrap">
               Notify Me
             </button>
           </div>
