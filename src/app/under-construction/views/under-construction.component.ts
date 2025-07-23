@@ -65,12 +65,12 @@ export class UnderConstructionComponent {
   this.emailSend = true;
     this.http.post('https://send-email.josealfredovallejo25.workers.dev', body).subscribe({
       next: (res) => {
+        this.email.reset();
         Swal.fire({
           icon: "success",
           text: 'email sent successfully',
           title: 'success',
         }).then(() => this.enableSendEmail());
-        console.log({res})
       },
       error: err => {
         this.email.reset();
@@ -81,7 +81,6 @@ export class UnderConstructionComponent {
         }).then(() => this.enableSendEmail());
       }
     })
-    console.log(this.email.value);
   }
 
   private enableSendEmail() {
