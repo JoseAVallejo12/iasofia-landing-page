@@ -1,20 +1,34 @@
 import {Component} from "@angular/core";
-import {NgFor, NgOptimizedImage, NgStyle} from "@angular/common";
+import {NgClass, NgFor, NgIf, NgOptimizedImage, NgStyle} from "@angular/common";
 import {interval, Subscription} from "rxjs";
 import {AnalogClockComponent} from "../components/analog-clock/analog-clock.component";
+import {FormControl, ReactiveFormsModule, Validators} from "@angular/forms";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @Component({
   selector: "under-construction-view",
   templateUrl: "./under-construction.component.html",
   styleUrls: ["./under-construction.component.scss"],
-  imports: [NgFor, AnalogClockComponent, NgStyle, NgOptimizedImage],
+  imports: [
+    NgFor,
+    AnalogClockComponent,
+    NgStyle,
+    NgOptimizedImage,
+    ReactiveFormsModule,
+    NgIf,
+    NgClass,
+    HttpClientModule,
+  ],
   standalone: true
 })
 export class UnderConstructionComponent {
   countdown = { days: 0, hours: 0, minutes: 0, seconds: 0 };
   timerSub!: Subscription;
-  email = '';
+  email = new FormControl('', [Validators.email, Validators.required]);
   private readonly releaseDate = new Date('2025-10-15T10:00:00');
+
+  constructor(private http: HttpClient) {
+  }
 
   ngOnInit() {
     this.timerSub = interval(1000).subscribe(() => this.updateCountdown());
@@ -41,10 +55,19 @@ export class UnderConstructionComponent {
     this.countdown.seconds = Math.floor((distance / 1000) % 60);
   }
 
-  onSubmit() {
-    console.log('Email registrado:', this.email);
-    // Aquí podrías llamar a una API real
-    alert(`¡Gracias! Te notificaremos cuando lancemos. 📩`);
-    this.email = '';
+  enviarEmail() {
+    if (this.email.invalid) return;
+    const body = {
+      email: this.email.value,
+    }
+    this.http.post('https://send-email.josealfredovallejo25.workers.dev', body).subscribe({
+      next: (res) => {
+        console.log({res})
+      },
+      error: err => {
+        console.log(err);
+      }
+    })
+    console.log(this.email.value);
   }
 }
