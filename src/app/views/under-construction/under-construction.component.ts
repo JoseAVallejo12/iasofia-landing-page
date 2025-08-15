@@ -1,24 +1,23 @@
 import {Component} from "@angular/core";
 import {NgClass, NgFor, NgIf, NgOptimizedImage, NgStyle} from "@angular/common";
 import {interval, Subscription} from "rxjs";
-import {AnalogClockComponent} from "../components/analog-clock/analog-clock.component";
+import {AnalogClockComponent} from "../../shared/components/analog-clock/analog-clock.component";
 import {FormControl, ReactiveFormsModule, Validators} from "@angular/forms";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import Swal from 'sweetalert2'
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: "under-construction-view",
   templateUrl: "./under-construction.component.html",
   styleUrls: ["./under-construction.component.scss"],
   imports: [
-    NgFor,
-    AnalogClockComponent,
-    NgStyle,
     NgOptimizedImage,
     ReactiveFormsModule,
     NgIf,
     NgClass,
     HttpClientModule,
+    RouterLink,
   ],
   standalone: true
 })

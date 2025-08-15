@@ -65,7 +65,7 @@
           </div>
           <small *ngIf="email.invalid && email.touched" class="text-amber-500">debes ingresar un correo valido</small>
           <p class="text-xs text-indigo-200 mt-3">
-            We respect your privacy. No spam, ever. Unsubscribe anytime.
+            We respect your privacy. No spam, ever. Unsubscribe anytime. <a class="text-white hover:text-indigo-200 hover:underline" [routerLink]="['/term-and-condition']">Terms and Conditions</a>.
           </p>
         </div>
 
