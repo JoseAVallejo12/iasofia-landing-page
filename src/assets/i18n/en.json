@@ -1,0 +1,319 @@
+{
+  "header": {
+    "brand": "IA Sofia",
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "login": "Log In",
+    "freeTrial": "Free Trial"
+  },
+  "hero": {
+    "badge": "AI-Powered Beauty Assistant",
+    "title": {
+      "first": "Your",
+      "highlight": "AI assistant",
+      "second": "for beauty appointments"
+    },
+    "description": "Never miss a client again. Let IA Sofia handle your WhatsApp inquiries and appointment scheduling 24/7 with intelligent automation.",
+    "buttons": {
+      "startTrial": "Start Free Trial",
+      "watchDemo": "Watch Demo"
+    },
+    "stats": {
+      "number": "2,500+",
+      "text": "beauty professionals trust IA Sofia"
+    },
+    "demo": {
+      "title": "WhatsApp Integration",
+      "subtitle": "AI-powered conversations",
+      "conversation": {
+        "client1": "Hi! I'd like to book a hair appointment for tomorrow.",
+        "sofia1": "Hello! I'd be happy to help you schedule an appointment. I have availability at 2:00 PM and 4:30 PM tomorrow. Which time works better for you?",
+        "client2": "2:00 PM sounds perfect!"
+      },
+      "booked": "Appointment Booked"
+    }
+  },
+  "problem": {
+    "badge": "The Problem",
+    "title": "Are you losing clients because you can't reply fast enough?",
+    "subtitle": "Beauty professionals often miss potential clients due to delayed responses. When clients need to book appointments, they expect immediate attention - or they'll move on to the next option.",
+    "missedMessages": {
+      "title": "Missed Messages",
+      "description": "When you're busy with clients, messages pile up and potential bookings are lost to competitors who respond faster."
+    },
+    "schedulingChaos": {
+      "title": "Scheduling Chaos",
+      "description": "Manual appointment management leads to double-bookings, scheduling errors, and frustrated clients."
+    },
+    "lostRevenue": {
+      "title": "Lost Revenue",
+      "description": "Every missed message is a potential client walking away - costing you hundreds of dollars in lost appointments."
+    }
+  },
+  "solution": {
+    "badge": "The Solution",
+    "title": "Meet IA Sofia, your 24/7 digital receptionist",
+    "subtitle": "IA Sofia responds instantly to WhatsApp inquiries, manages your services, prices, and availability - all while maintaining your professional tone and brand voice.",
+    "features": {
+      "instantResponses": {
+        "title": "Instant responses to client inquiries",
+        "description": "Never keep clients waiting with immediate, professional responses 24/7"
+      },
+      "smartBooking": {
+        "title": "Smart appointment booking",
+        "description": "Automatically check availability and book appointments directly from WhatsApp"
+      },
+      "serviceInfo": {
+        "title": "Service information and pricing",
+        "description": "Provide detailed information about your services and pricing instantly"
+      },
+      "brandVoice": {
+        "title": "Your brand voice maintained",
+        "description": "Customizable responses that match your salon's personality and professionalism"
+      },
+      "reminders": {
+        "title": "Automated reminders and confirmations",
+        "description": "Reduce no-shows with smart appointment reminders and confirmations"
+      }
+    },
+    "demo": {
+      "title": "Live WhatsApp Demo",
+      "subtitle": "See IA Sofia in action",
+      "conversation": {
+        "client1": "What services do you offer?",
+        "sofia1": "Hi! We offer haircuts ($45), hair coloring ($85), manicures ($35), and facial treatments ($65). Would you like to book any of these services?",
+        "client2": "I'd like a haircut tomorrow",
+        "sofia2": "Perfect! I have these slots available tomorrow: 10:00 AM, 2:00 PM, and 4:30 PM. Which works best for you?"
+      }
+    }
+  },
+  "benefits": {
+    "badge": "Key Benefits",
+    "title": "Transform your business with automated client communication",
+    "subtitle": "Discover how IA Sofia can revolutionize your beauty business operations",
+    "saveTime": {
+      "title": "Save Time",
+      "description": "Automate repetitive tasks like answering common questions and scheduling appointments, freeing up hours in your day.",
+      "metric": "15+ hrs",
+      "metricLabel": "saved per week"
+    },
+    "gainClients": {
+      "title": "Gain Clients",
+      "description": "Never miss an opportunity with instant responses that convert inquiries into bookings and build customer loyalty.",
+      "metric": "+40%",
+      "metricLabel": "more bookings"
+    },
+    "organizedSchedule": {
+      "title": "Organized Schedule",
+      "description": "Maintain a perfectly organized calendar with automated booking, rescheduling, and intelligent reminders.",
+      "metric": "-60%",
+      "metricLabel": "fewer no-shows"
+    }
+  },
+  "howItWorks": {
+    "badge": "How It Works",
+    "title": "A seamless experience for you and your clients",
+    "subtitle": "Simple, automated, and effective - see how IA Sofia works in three easy steps",
+    "step1": {
+      "title": "Client Writes",
+      "description": "Your client sends a WhatsApp message asking about services, pricing, or appointments at any time of day.",
+      "example": "Hi, I'd like to book a manicure for this weekend. What times do you have available?"
+    },
+    "step2": {
+      "title": "IA Sofia Responds",
+      "description": "IA Sofia instantly provides information about your services, checks availability, and can book appointments on the spot.",
+      "example": "Hello! I'd be happy to help you book a manicure. This weekend I have availability on Saturday at 2 PM or Sunday at 11 AM. Which works better for you?"
+    },
+    "step3": {
+      "title": "Appointment Confirmed",
+      "description": "Once confirmed, both you and your client receive confirmation with all the details. Your calendar is automatically updated.",
+      "example": "Perfect! Your manicure appointment is confirmed for Saturday, March 15th at 2:00 PM. We'll send you a reminder 24 hours before."
+    }
+  },
+  "pricing": {
+    "badge": "Subscription Plans",
+    "title": "Choose the perfect plan for your beauty business",
+    "subtitle": "Flexible pricing options designed to grow with your business",
+    "basic": {
+      "title": "Basic",
+      "price": "$29",
+      "period": "/month",
+      "description": "Perfect for solo practitioners",
+      "features": [
+        "Up to 100 messages/month",
+        "Basic appointment scheduling",
+        "Service information responses",
+        "WhatsApp integration",
+        "Email support"
+      ],
+      "button": "Start Basic Plan"
+    },
+    "professional": {
+      "title": "Professional",
+      "price": "$59",
+      "period": "/month",
+      "description": "Ideal for growing salons",
+      "popular": "Most Popular",
+      "features": [
+        "Up to 500 messages/month",
+        "Advanced scheduling features",
+        "Custom service menus",
+        "Client reminder system",
+        "Priority support",
+        "Analytics dashboard"
+      ],
+      "button": "Start Professional"
+    },
+    "enterprise": {
+      "title": "Enterprise",
+      "price": "$119",
+      "period": "/month",
+      "description": "For multi-location businesses",
+      "features": [
+        "Unlimited messages",
+        "Multi-location support",
+        "Advanced analytics",
+        "Custom integrations",
+        "Dedicated account manager",
+        "24/7 phone support"
+      ],
+      "button": "Contact Sales"
+    },
+    "comparison": {
+      "title": "Feature Comparison",
+      "features": "Features",
+      "basic": "Basic",
+      "pro": "Pro",
+      "premium": "Premium",
+      "monthlyMessages": "Monthly messages",
+      "responseTime": "Response time",
+      "calendarIntegration": "Calendar integration",
+      "customResponses": "Custom responses",
+      "analyticsDashboard": "Analytics dashboard",
+      "teamMembers": "Team members",
+      "values": {
+        "basic": {
+          "messages": "100",
+          "responseTime": "Under 1 min",
+          "analytics": "Basic",
+          "teamMembers": "1"
+        },
+        "pro": {
+          "messages": "500",
+          "responseTime": "Under 30 sec",
+          "analytics": "Advanced",
+          "teamMembers": "3"
+        },
+        "premium": {
+          "messages": "Unlimited",
+          "responseTime": "Instant",
+          "analytics": "Premium",
+          "teamMembers": "Unlimited"
+        }
+      }
+    },
+    "moneyBackGuarantee": "30-day money-back guarantee",
+    "freeTrialNote": "All plans include a 14-day free trial"
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "What Our Users Say",
+    "subtitle": "Beauty professionals love how IA Sofia transforms their business",
+    "testimonial1": {
+      "name": "Maria Rodriguez",
+      "role": "Hair Stylist",
+      "quote": "Since using IA Sofia, I've increased my bookings by 30%. Clients love how easy it is to schedule appointments, even when I'm busy with other customers. It's like having a professional receptionist 24/7!",
+      "metric": "+30% more bookings"
+    },
+    "testimonial2": {
+      "name": "Carlos Mendez",
+      "role": "Barber Shop Owner",
+      "quote": "IA Sofia has been a game-changer for my barbershop. I was losing clients due to missed WhatsApp messages, but now we're fully booked weeks in advance. The ROI is incredible!",
+      "metric": "Fully booked weeks ahead"
+    },
+    "testimonial3": {
+      "name": "Ana Ferreira",
+      "role": "Nail Salon Owner",
+      "quote": "I can finally focus on my clients instead of constantly checking my phone. IA Sofia handles all the scheduling and even sends reminders, reducing no-shows by 50%. It's amazing!",
+      "metric": "-50% fewer no-shows"
+    }
+  },
+  "faq": {
+    "badge": "Frequently Asked Questions",
+    "title": "Get answers to common questions about IA Sofia",
+    "subtitle": "Everything you need to know about our AI assistant",
+    "q1": {
+      "question": "How does IA Sofia connect to my WhatsApp?",
+      "answer": "IA Sofia connects through WhatsApp Business API. After subscribing, you'll receive step-by-step instructions to link your business number. The setup takes less than 10 minutes and our support team is available 24/7 to help you through the process."
+    },
+    "q2": {
+      "question": "Will my clients know they're talking to an AI?",
+      "answer": "IA Sofia is designed to communicate naturally and professionally. While we recommend transparency about using AI assistance, many clients appreciate the instant responses. You can customize how Sofia introduces herself to match your preferences."
+    },
+    "q3": {
+      "question": "Can IA Sofia handle complex booking requests?",
+      "answer": "Yes! IA Sofia can handle various booking scenarios including checking availability, scheduling appointments, rescheduling, and managing cancellations. For very complex requests, Sofia can seamlessly transfer the conversation to you."
+    },
+    "q4": {
+      "question": "What if IA Sofia doesn't know how to respond?",
+      "answer": "IA Sofia is trained on beauty industry scenarios, but if she encounters something unfamiliar, she'll politely indicate she needs to connect the client with you directly. You'll receive a notification to take over the conversation."
+    },
+    "q5": {
+      "question": "How secure is my client data?",
+      "answer": "We take security seriously. All data is encrypted and stored securely. We're GDPR compliant and never share your client information with third parties. Your data belongs to you and you can export or delete it at any time."
+    },
+    "q6": {
+      "question": "Can I customize IA Sofia's responses?",
+      "answer": "Absolutely! You can customize Sofia's personality, tone, and specific responses to match your brand voice. You can also add custom services, pricing, and availability information that Sofia will use to respond to clients."
+    }
+  },
+  "finalCta": {
+    "badge": "Ready to Get Started?",
+    "title": "Ready to transform your beauty business?",
+    "subtitle": "Join thousands of beauty professionals who never miss a client with IA Sofia. Start your journey to automated success today.",
+    "startFreeTrial": "Start Your Free 14-Day Trial",
+    "scheduleDemo": "Schedule a Demo",
+    "noCommitment": "No credit card required. Cancel anytime.",
+    "securePrivate": "Secure & Private",
+    "support247": "24/7 Support",
+    "moneyBack30": "30-Day Money Back"
+  },
+  "footer": {
+    "brand": "IA Sofia",
+    "description": "Your AI assistant for beauty appointments. Never miss a client again with intelligent automation and professional service.",
+    "product": {
+      "title": "Product",
+      "features": "Features",
+      "pricing": "Pricing",
+      "faq": "FAQ",
+      "testimonials": "Testimonials",
+      "apiDocs": "API Documentation"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "careers": "Careers",
+      "blog": "Blog",
+      "contact": "Contact",
+      "pressKit": "Press Kit"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy",
+      "gdpr": "GDPR Compliance",
+      "dataSecurity": "Data Security"
+    },
+    "copyright": "© 2025 IA Sofia. All rights reserved.",
+    "bottomLinks": {
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "cookies": "Cookies",
+      "contact": "Contact"
+    }
+  }
+}

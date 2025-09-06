@@ -9,23 +9,21 @@
               d="M345 39.1L472.8 168.4c52.4 53 52.4 138.2 0 191.2L360.8 472.9c-9.3 9.4-24.5 9.5-33.9 .2s-9.5-24.5-.2-33.9L438.6 325.9c33.9-34.3 33.9-89.4 0-123.7L310.9 72.9c-9.3-9.4-9.2-24.6 .2-33.9s24.6-9.2 33.9 .2zM0 229.5V80C0 53.5 21.5 32 48 32H197.5c17 0 33.3 6.7 45.3 18.7l168 168c25 25 25 65.5 0 90.5L277.3 442.7c-25 25-65.5 25-90.5 0l-168-168C6.7 262.7 0 246.5 0 229.5zM144 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z">
             </path>
           </svg></i>
-        Subscription Plans
+        {{ 'pricing.badge' | translate }}
       </div>
-      <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">Choose the perfect plan for your
-        beauty business</h2>
-      <p class="text-xl text-gray-600 leading-relaxed">Flexible pricing options designed to grow with your
-        business</p>
+      <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">{{ 'pricing.title' | translate }}</h2>
+      <p class="text-xl text-gray-600 leading-relaxed">{{ 'pricing.subtitle' | translate }}</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
       <div class="border-2 border-gray-200 rounded-3xl overflow-hidden card-hover bg-white">
         <div class="p-8 bg-gradient-to-br from-gray-50 to-blue-50">
-          <h3 class="text-2xl font-bold text-gray-900 mb-2">Basic</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">{{ 'pricing.basic.title' | translate }}</h3>
           <div class="flex items-end mb-4">
-            <span class="text-5xl font-bold text-gray-900">$29</span>
-            <span class="text-gray-600 ml-2 text-lg">/month</span>
+            <span class="text-5xl font-bold text-gray-900">{{ 'pricing.basic.price' | translate }}</span>
+            <span class="text-gray-600 ml-2 text-lg">{{ 'pricing.basic.period' | translate }}</span>
           </div>
-          <p class="text-gray-600">Perfect for solo practitioners</p>
+          <p class="text-gray-600">{{ 'pricing.basic.description' | translate }}</p>
         </div>
         <div class="p-8">
           <ul class="space-y-4 mb-8">
@@ -37,7 +35,7 @@
                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                   </path>
                 </svg></i>
-              <span class="text-gray-700">Up to 100 messages/month</span>
+              <span class="text-gray-700">{{ 'pricing.basic.features.0' | translate }}</span>
             </li>
             <li class="flex items-start">
               <i class="text-green-600 mt-1 mr-3" data-fa-i2svg=""><svg class="svg-inline--fa fa-check"
@@ -47,7 +45,7 @@
                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                   </path>
                 </svg></i>
-              <span class="text-gray-700">Basic appointment scheduling</span>
+              <span class="text-gray-700">{{ 'pricing.basic.features.1' | translate }}</span>
             </li>
             <li class="flex items-start">
               <i class="text-green-600 mt-1 mr-3" data-fa-i2svg=""><svg class="svg-inline--fa fa-check"
@@ -57,7 +55,7 @@
                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                   </path>
                 </svg></i>
-              <span class="text-gray-700">Service information</span>
+              <span class="text-gray-700">{{ 'pricing.basic.features.2' | translate }}</span>
             </li>
             <li class="flex items-start text-gray-400">
               <i class="mt-1 mr-3" data-fa-i2svg=""><svg class="svg-inline--fa fa-xmark" aria-hidden="true"
@@ -81,22 +79,22 @@
             </li>
           </ul>
           <button
-            class="w-full py-4 px-6 bg-gray-100 text-gray-800 rounded-xl font-semibold hover:bg-gray-200 transition-all">Subscribe</button>
+            class="w-full py-4 px-6 bg-gray-100 text-gray-800 rounded-xl font-semibold hover:bg-gray-200 transition-all">{{ 'pricing.basic.button' | translate }}</button>
         </div>
       </div>
 
       <div
         class="border-2 border-primary rounded-3xl overflow-hidden card-hover bg-white shadow-2xl relative transform scale-105">
         <div class="absolute top-0 right-0 accent-gradient text-white px-6 py-2 text-sm font-semibold rounded-bl-2xl">
-          Most Popular
+          {{ 'pricing.professional.popular' | translate }}
         </div>
         <div class="p-8 bg-gradient-to-br from-blue-50 to-indigo-50">
-          <h3 class="text-2xl font-bold text-gray-900 mb-2">Pro</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">{{ 'pricing.professional.title' | translate }}</h3>
           <div class="flex items-end mb-4">
-            <span class="text-5xl font-bold text-primary">$59</span>
-            <span class="text-gray-600 ml-2 text-lg">/month</span>
+            <span class="text-5xl font-bold text-primary">{{ 'pricing.professional.price' | translate }}</span>
+            <span class="text-gray-600 ml-2 text-lg">{{ 'pricing.professional.period' | translate }}</span>
           </div>
-          <p class="text-gray-600">For growing businesses</p>
+          <p class="text-gray-600">{{ 'pricing.professional.description' | translate }}</p>
         </div>
         <div class="p-8">
           <ul class="space-y-4 mb-8">
@@ -108,7 +106,7 @@
                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                   </path>
                 </svg></i>
-              <span class="text-gray-700">Up to 500 messages/month</span>
+              <span class="text-gray-700">{{ 'pricing.professional.features.0' | translate }}</span>
             </li>
             <li class="flex items-start">
               <i class="text-green-600 mt-1 mr-3" data-fa-i2svg=""><svg class="svg-inline--fa fa-check"
@@ -118,7 +116,7 @@
                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                   </path>
                 </svg></i>
-              <span class="text-gray-700">Advanced scheduling</span>
+              <span class="text-gray-700">{{ 'pricing.professional.features.1' | translate }}</span>
             </li>
             <li class="flex items-start">
               <i class="text-green-600 mt-1 mr-3" data-fa-i2svg=""><svg class="svg-inline--fa fa-check"
@@ -128,7 +126,7 @@
                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                   </path>
                 </svg></i>
-              <span class="text-gray-700">Service &amp; price information</span>
+              <span class="text-gray-700">{{ 'pricing.professional.features.2' | translate }}</span>
             </li>
             <li class="flex items-start">
               <i class="text-green-600 mt-1 mr-3" data-fa-i2svg=""><svg class="svg-inline--fa fa-check"
@@ -138,7 +136,27 @@
                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                   </path>
                 </svg></i>
-              <span class="text-gray-700">Custom responses</span>
+              <span class="text-gray-700">{{ 'pricing.professional.features.3' | translate }}</span>
+            </li>
+            <li class="flex items-start">
+              <i class="text-green-600 mt-1 mr-3" data-fa-i2svg=""><svg class="svg-inline--fa fa-check"
+                  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                  </path>
+                </svg></i>
+              <span class="text-gray-700">{{ 'pricing.professional.features.4' | translate }}</span>
+            </li>
+            <li class="flex items-start">
+              <i class="text-green-600 mt-1 mr-3" data-fa-i2svg=""><svg class="svg-inline--fa fa-check"
+                  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                  </path>
+                </svg></i>
+              <span class="text-gray-700">{{ 'pricing.professional.features.5' | translate }}</span>
             </li>
             <li class="flex items-start text-gray-400">
               <i class="mt-1 mr-3" data-fa-i2svg=""><svg class="svg-inline--fa fa-xmark" aria-hidden="true"
@@ -152,18 +170,18 @@
             </li>
           </ul>
           <button
-            class="w-full py-4 px-6 gradient-bg text-white rounded-xl font-semibold hover:shadow-lg transition-all transform hover:scale-105">Subscribe</button>
+            class="w-full py-4 px-6 gradient-bg text-white rounded-xl font-semibold hover:shadow-lg transition-all transform hover:scale-105">{{ 'pricing.professional.button' | translate }}</button>
         </div>
       </div>
 
       <div class="border-2 border-gray-200 rounded-3xl overflow-hidden card-hover bg-white">
         <div class="p-8 bg-gradient-to-br from-purple-50 to-pink-50">
-          <h3 class="text-2xl font-bold text-gray-900 mb-2">Premium</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">{{ 'pricing.enterprise.title' | translate }}</h3>
           <div class="flex items-end mb-4">
-            <span class="text-5xl font-bold text-gray-900">$99</span>
-            <span class="text-gray-600 ml-2 text-lg">/month</span>
+            <span class="text-5xl font-bold text-gray-900">{{ 'pricing.enterprise.price' | translate }}</span>
+            <span class="text-gray-600 ml-2 text-lg">{{ 'pricing.enterprise.period' | translate }}</span>
           </div>
-          <p class="text-gray-600">For salons and spas</p>
+          <p class="text-gray-600">{{ 'pricing.enterprise.description' | translate }}</p>
         </div>
         <div class="p-8">
           <ul class="space-y-4 mb-8">
@@ -175,7 +193,7 @@
                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                   </path>
                 </svg></i>
-              <span class="text-gray-700">Unlimited messages</span>
+              <span class="text-gray-700">{{ 'pricing.enterprise.features.0' | translate }}</span>
             </li>
             <li class="flex items-start">
               <i class="text-green-600 mt-1 mr-3" data-fa-i2svg=""><svg class="svg-inline--fa fa-check"
@@ -185,7 +203,7 @@
                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                   </path>
                 </svg></i>
-              <span class="text-gray-700">Complete scheduling system</span>
+              <span class="text-gray-700">{{ 'pricing.enterprise.features.1' | translate }}</span>
             </li>
             <li class="flex items-start">
               <i class="text-green-600 mt-1 mr-3" data-fa-i2svg=""><svg class="svg-inline--fa fa-check"
@@ -195,7 +213,7 @@
                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                   </path>
                 </svg></i>
-              <span class="text-gray-700">Full service catalog</span>
+              <span class="text-gray-700">{{ 'pricing.enterprise.features.2' | translate }}</span>
             </li>
             <li class="flex items-start">
               <i class="text-green-600 mt-1 mr-3" data-fa-i2svg=""><svg class="svg-inline--fa fa-check"
@@ -205,7 +223,7 @@
                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                   </path>
                 </svg></i>
-              <span class="text-gray-700">Custom responses</span>
+              <span class="text-gray-700">{{ 'pricing.enterprise.features.3' | translate }}</span>
             </li>
             <li class="flex items-start">
               <i class="text-green-600 mt-1 mr-3" data-fa-i2svg=""><svg class="svg-inline--fa fa-check"
@@ -215,106 +233,98 @@
                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
                   </path>
                 </svg></i>
-              <span class="text-gray-700">Advanced analytics</span>
+              <span class="text-gray-700">{{ 'pricing.enterprise.features.4' | translate }}</span>
+            </li>
+            <li class="flex items-start">
+              <i class="text-green-600 mt-1 mr-3" data-fa-i2svg=""><svg class="svg-inline--fa fa-check"
+                  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                  </path>
+                </svg></i>
+              <span class="text-gray-700">{{ 'pricing.enterprise.features.5' | translate }}</span>
             </li>
           </ul>
           <button
-            class="w-full py-4 px-6 bg-gray-100 text-gray-800 rounded-xl font-semibold hover:bg-gray-200 transition-all">Subscribe</button>
+            class="w-full py-4 px-6 bg-gray-100 text-gray-800 rounded-xl font-semibold hover:bg-gray-200 transition-all">{{ 'pricing.enterprise.button' | translate }}</button>
         </div>
       </div>
     </div>
 
     <div class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl overflow-hidden shadow-lg">
       <div class="p-8">
-        <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Feature Comparison</h3>
+        <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">{{ 'pricing.comparison.title' | translate }}</h3>
         <div class="overflow-x-auto">
           <table class="w-full">
             <thead>
               <tr class="border-b-2 border-gray-200">
-                <th class="p-4 text-left text-gray-900 font-semibold">Features</th>
-                <th class="p-4 text-center text-gray-900 font-semibold">Basic</th>
-                <th class="p-4 text-center text-primary font-semibold">Pro</th>
-                <th class="p-4 text-center text-gray-900 font-semibold">Premium</th>
+                <th class="p-4 text-left text-gray-900 font-semibold">{{ 'pricing.comparison.features' | translate }}</th>
+                <th class="p-4 text-center text-gray-900 font-semibold">{{ 'pricing.comparison.basic' | translate }}</th>
+                <th class="p-4 text-center text-primary font-semibold">{{ 'pricing.comparison.pro' | translate }}</th>
+                <th class="p-4 text-center text-gray-900 font-semibold">{{ 'pricing.comparison.premium' | translate }}</th>
               </tr>
             </thead>
             <tbody class="space-y-2">
               <tr class="border-b border-gray-100">
-                <td class="p-4 font-medium text-gray-700">Monthly messages</td>
-                <td class="p-4 text-center text-gray-600">100</td>
-                <td class="p-4 text-center font-semibold text-primary">500</td>
-                <td class="p-4 text-center text-gray-600">Unlimited</td>
+                <td class="p-4 font-medium text-gray-700">{{ 'pricing.comparison.monthlyMessages' | translate }}</td>
+                <td class="p-4 text-center text-gray-600">{{ 'pricing.comparison.values.basic.messages' | translate }}</td>
+                <td class="p-4 text-center font-semibold text-primary">{{ 'pricing.comparison.values.pro.messages' | translate }}</td>
+                <td class="p-4 text-center text-gray-600">{{ 'pricing.comparison.values.premium.messages' | translate }}</td>
               </tr>
               <tr class="border-b border-gray-100">
-                <td class="p-4 font-medium text-gray-700">Response time</td>
-                <td class="p-4 text-center text-gray-600">Under 1 min</td>
-                <td class="p-4 text-center font-semibold text-primary">Under 30 sec</td>
-                <td class="p-4 text-center text-gray-600">Instant</td>
+                <td class="p-4 font-medium text-gray-700">{{ 'pricing.comparison.responseTime' | translate }}</td>
+                <td class="p-4 text-center text-gray-600">{{ 'pricing.comparison.values.basic.responseTime' | translate }}</td>
+                <td class="p-4 text-center font-semibold text-primary">{{ 'pricing.comparison.values.pro.responseTime' | translate }}</td>
+                <td class="p-4 text-center text-gray-600">{{ 'pricing.comparison.values.premium.responseTime' | translate }}</td>
               </tr>
               <tr class="border-b border-gray-100">
-                <td class="p-4 font-medium text-gray-700">Calendar integration</td>
-                <td class="p-4 text-center"><i class="text-green-600" data-fa-i2svg=""><svg
-                      class="svg-inline--fa fa-check" aria-hidden="true" focusable="false" data-prefix="fas"
-                      data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                      data-fa-i2svg="">
-                      <path fill="currentColor"
-                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
-                      </path>
-                    </svg></i></td>
-                <td class="p-4 text-center"><i class="text-green-600" data-fa-i2svg=""><svg
-                      class="svg-inline--fa fa-check" aria-hidden="true" focusable="false" data-prefix="fas"
-                      data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                      data-fa-i2svg="">
-                      <path fill="currentColor"
-                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
-                      </path>
-                    </svg></i></td>
-                <td class="p-4 text-center"><i class="text-green-600" data-fa-i2svg=""><svg
-                      class="svg-inline--fa fa-check" aria-hidden="true" focusable="false" data-prefix="fas"
-                      data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                      data-fa-i2svg="">
-                      <path fill="currentColor"
-                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
-                      </path>
-                    </svg></i></td>
+                <td class="p-4 font-medium text-gray-700">{{ 'pricing.comparison.calendarIntegration' | translate }}</td>
+                <td class="p-4 text-center">
+                  <svg class="w-5 h-5 text-green-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </td>
+                <td class="p-4 text-center">
+                  <svg class="w-5 h-5 text-green-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </td>
+                <td class="p-4 text-center">
+                  <svg class="w-5 h-5 text-green-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </td>
               </tr>
               <tr class="border-b border-gray-100">
-                <td class="p-4 font-medium text-gray-700">Custom responses</td>
-                <td class="p-4 text-center"><i class="text-gray-400" data-fa-i2svg=""><svg
-                      class="svg-inline--fa fa-xmark" aria-hidden="true" focusable="false" data-prefix="fas"
-                      data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
-                      data-fa-i2svg="">
-                      <path fill="currentColor"
-                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
-                      </path>
-                    </svg></i></td>
-                <td class="p-4 text-center"><i class="text-green-600" data-fa-i2svg=""><svg
-                      class="svg-inline--fa fa-check" aria-hidden="true" focusable="false" data-prefix="fas"
-                      data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                      data-fa-i2svg="">
-                      <path fill="currentColor"
-                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
-                      </path>
-                    </svg></i></td>
-                <td class="p-4 text-center"><i class="text-green-600" data-fa-i2svg=""><svg
-                      class="svg-inline--fa fa-check" aria-hidden="true" focusable="false" data-prefix="fas"
-                      data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                      data-fa-i2svg="">
-                      <path fill="currentColor"
-                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
-                      </path>
-                    </svg></i></td>
+                <td class="p-4 font-medium text-gray-700">{{ 'pricing.comparison.customResponses' | translate }}</td>
+                <td class="p-4 text-center">
+                  <svg class="w-5 h-5 text-gray-400 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </td>
+                <td class="p-4 text-center">
+                  <svg class="w-5 h-5 text-green-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </td>
+                <td class="p-4 text-center">
+                  <svg class="w-5 h-5 text-green-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </td>
               </tr>
               <tr class="border-b border-gray-100">
-                <td class="p-4 font-medium text-gray-700">Analytics dashboard</td>
-                <td class="p-4 text-center text-gray-600">Basic</td>
-                <td class="p-4 text-center font-semibold text-primary">Advanced</td>
-                <td class="p-4 text-center text-gray-600">Premium</td>
+                <td class="p-4 font-medium text-gray-700">{{ 'pricing.comparison.analyticsDashboard' | translate }}</td>
+                <td class="p-4 text-center text-gray-600">{{ 'pricing.comparison.values.basic.analytics' | translate }}</td>
+                <td class="p-4 text-center font-semibold text-primary">{{ 'pricing.comparison.values.pro.analytics' | translate }}</td>
+                <td class="p-4 text-center text-gray-600">{{ 'pricing.comparison.values.premium.analytics' | translate }}</td>
               </tr>
               <tr>
-                <td class="p-4 font-medium text-gray-700">Team members</td>
-                <td class="p-4 text-center text-gray-600">1</td>
-                <td class="p-4 text-center font-semibold text-primary">3</td>
-                <td class="p-4 text-center text-gray-600">Unlimited</td>
+                <td class="p-4 font-medium text-gray-700">{{ 'pricing.comparison.teamMembers' | translate }}</td>
+                <td class="p-4 text-center text-gray-600">{{ 'pricing.comparison.values.basic.teamMembers' | translate }}</td>
+                <td class="p-4 text-center font-semibold text-primary">{{ 'pricing.comparison.values.pro.teamMembers' | translate }}</td>
+                <td class="p-4 text-center text-gray-600">{{ 'pricing.comparison.values.premium.teamMembers' | translate }}</td>
               </tr>
             </tbody>
           </table>

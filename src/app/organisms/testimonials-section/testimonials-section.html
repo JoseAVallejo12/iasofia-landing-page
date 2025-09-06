@@ -10,20 +10,19 @@
               d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z">
             </path>
           </svg></i>
-        Testimonials
+        {{ 'testimonials.badge' | translate }}
       </div>
-      <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">What Our Users Say</h2>
-      <p class="text-xl text-gray-600 leading-relaxed">Beauty professionals love how IA Sofia transforms
-        their business</p>
+      <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">{{ 'testimonials.title' | translate }}</h2>
+      <p class="text-xl text-gray-600 leading-relaxed">{{ 'testimonials.subtitle' | translate }}</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="bg-white rounded-3xl p-8 shadow-lg card-hover">
         <div class="flex items-center mb-6">
-          <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="Maria Rodriguez"
+          <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="{{ 'testimonials.testimonial1.name' | translate }}"
             class="w-16 h-16 rounded-full mr-4 border-4 border-pink-100">
           <div>
-            <h4 class="font-bold text-gray-900 text-lg">Maria Rodriguez</h4>
-            <p class="text-gray-600">Hair Stylist</p>
+            <h4 class="font-bold text-gray-900 text-lg">{{ 'testimonials.testimonial1.name' | translate }}</h4>
+            <p class="text-gray-600">{{ 'testimonials.testimonial1.role' | translate }}</p>
             <div class="flex text-yellow-400 mt-1">
               <i data-fa-i2svg=""><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
                   data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
@@ -63,20 +62,18 @@
             </div>
           </div>
         </div>
-        <p class="text-gray-700 leading-relaxed mb-4 italic">"Since using IA Sofia, I've increased my
-          bookings by 30%. Clients love how easy it is to schedule appointments, even when I'm busy
-          with other customers. It's like having a professional receptionist 24/7!"</p>
+        <p class="text-gray-700 leading-relaxed mb-4 italic">"{{ 'testimonials.testimonial1.quote' | translate }}"</p>
         <div class="bg-green-50 rounded-xl p-3">
-          <div class="text-green-800 font-semibold text-sm">+30% more bookings</div>
+          <div class="text-green-800 font-semibold text-sm">{{ 'testimonials.testimonial1.metric' | translate }}</div>
         </div>
       </div>
       <div class="bg-white rounded-3xl p-8 shadow-lg card-hover">
         <div class="flex items-center mb-6">
-          <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Carlos Mendez"
+          <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="{{ 'testimonials.testimonial2.name' | translate }}"
             class="w-16 h-16 rounded-full mr-4 border-4 border-blue-100">
           <div>
-            <h4 class="font-bold text-gray-900 text-lg">Carlos Mendez</h4>
-            <p class="text-gray-600">Barber Shop Owner</p>
+            <h4 class="font-bold text-gray-900 text-lg">{{ 'testimonials.testimonial2.name' | translate }}</h4>
+            <p class="text-gray-600">{{ 'testimonials.testimonial2.role' | translate }}</p>
             <div class="flex text-yellow-400 mt-1">
               <i data-fa-i2svg=""><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
                   data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
@@ -116,20 +113,18 @@
             </div>
           </div>
         </div>
-        <p class="text-gray-700 leading-relaxed mb-4 italic">"IA Sofia has been a game-changer for my
-          barbershop. I was losing clients due to missed WhatsApp messages, but now we're fully booked
-          weeks in advance. The ROI is incredible!"</p>
+        <p class="text-gray-700 leading-relaxed mb-4 italic">"{{ 'testimonials.testimonial2.quote' | translate }}"</p>
         <div class="bg-blue-50 rounded-xl p-3">
-          <div class="text-blue-800 font-semibold text-sm">Fully booked weeks ahead</div>
+          <div class="text-blue-800 font-semibold text-sm">{{ 'testimonials.testimonial2.metric' | translate }}</div>
         </div>
       </div>
       <div class="bg-white rounded-3xl p-8 shadow-lg card-hover">
         <div class="flex items-center mb-6">
-          <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Ana Ferreira"
+          <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="{{ 'testimonials.testimonial3.name' | translate }}"
             class="w-16 h-16 rounded-full mr-4 border-4 border-purple-100">
           <div>
-            <h4 class="font-bold text-gray-900 text-lg">Ana Ferreira</h4>
-            <p class="text-gray-600">Nail Salon Owner</p>
+            <h4 class="font-bold text-gray-900 text-lg">{{ 'testimonials.testimonial3.name' | translate }}</h4>
+            <p class="text-gray-600">{{ 'testimonials.testimonial3.role' | translate }}</p>
             <div class="flex text-yellow-400 mt-1">
               <i data-fa-i2svg=""><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
                   data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
@@ -169,11 +164,9 @@
             </div>
           </div>
         </div>
-        <p class="text-gray-700 leading-relaxed mb-4 italic">"I can finally focus on my clients instead
-          of constantly checking my phone. IA Sofia handles all the scheduling and even sends
-          reminders, reducing no-shows by 50%. It's amazing!"</p>
+        <p class="text-gray-700 leading-relaxed mb-4 italic">"{{ 'testimonials.testimonial3.quote' | translate }}"</p>
         <div class="bg-purple-50 rounded-xl p-3">
-          <div class="text-purple-800 font-semibold text-sm">-50% fewer no-shows</div>
+          <div class="text-purple-800 font-semibold text-sm">{{ 'testimonials.testimonial3.metric' | translate }}</div>
         </div>
       </div>
     </div>

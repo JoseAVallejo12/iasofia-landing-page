@@ -9,24 +9,18 @@
           </path>
         </svg></i>
     </div>
-    <span class="text-xl font-bold text-primary">IA Sofia</span>
+    <span class="text-xl font-bold text-primary">{{ 'header.brand' | translate }}</span>
   </div>
   <nav class="hidden md:flex space-x-8">
-    <span class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">Features</span>
-    <span class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">How It
-      Works</span>
-    <span class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">Pricing</span>
-    <span class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">FAQ</span>
+    <span class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.features' | translate }}</span>
+    <span class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.howItWorks' | translate }}</span>
+    <span class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.pricing' | translate }}</span>
+    <span class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.faq' | translate }}</span>
+    <span class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.contact' | translate }}</span>
   </nav>
   <div class="flex items-center space-x-4">
-    <span
-      class="hidden md:inline-block text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">Contact</span>
-    <span
-      class="hidden md:inline-block px-5 py-2.5 border border-gray-200 rounded-xl text-gray-700 hover:bg-gray-50 cursor-pointer font-medium transition-all">Log
-      In</span>
-    <span
-      class="px-5 py-2.5 gradient-bg text-white rounded-xl hover:shadow-lg cursor-pointer font-medium transition-all transform hover:scale-105">Free
-      Trial</span>
+    <app-language-selector></app-language-selector>
+    <span class="px-5 py-2.5 gradient-bg text-white rounded-xl hover:shadow-lg cursor-pointer font-medium transition-all transform hover:scale-105">{{ 'header.freeTrial' | translate }}</span>
   </div>
   <button class="md:hidden text-gray-700">
     <i class="text-xl" data-fa-i2svg=""><svg class="svg-inline--fa fa-bars" aria-hidden="true" focusable="false"

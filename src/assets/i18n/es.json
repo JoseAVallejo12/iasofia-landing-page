@@ -1,0 +1,319 @@
+{
+  "header": {
+    "brand": "IA Sofia",
+    "features": "Características",
+    "howItWorks": "Cómo Funciona",
+    "pricing": "Precios",
+    "faq": "Preguntas Frecuentes",
+    "contact": "Contacto",
+    "login": "Iniciar Sesión",
+    "freeTrial": "Prueba Gratuita"
+  },
+    "finalCta": {
+    "badge": "¿Listo para Comenzar?",
+    "title": "¿Listo para transformar tu negocio de belleza?",
+    "subtitle": "Únete a miles de profesionales de la belleza que nunca pierden un cliente con IA Sofia. Comienza tu viaje hacia el éxito automatizado hoy.",
+    "startFreeTrial": "Inicia tu Prueba Gratuita de 14 Días",
+    "scheduleDemo": "Agendar una Demo",
+    "noCommitment": "No se requiere tarjeta de crédito. Cancela en cualquier momento.",
+    "securePrivate": "Seguro y Privado",
+    "support247": "Soporte 24/7",
+    "moneyBack30": "Garantía de 30 Días"
+  },
+  "hero": {
+    "badge": "Asistente de Belleza con IA",
+    "title": {
+      "first": "Tu",
+      "highlight": "asistente de IA",
+      "second": "para citas de belleza"
+    },
+    "description": "Nunca más pierdas un cliente. Deja que IA Sofia maneje tus consultas de WhatsApp y programación de citas 24/7 con automatización inteligente.",
+    "buttons": {
+      "startTrial": "Prueba Gratis",
+      "watchDemo": "Ver Demo"
+    },
+    "stats": {
+      "number": "2,500+",
+      "text": "profesionales de belleza confían en IA Sofia"
+    },
+    "demo": {
+      "title": "Integración WhatsApp",
+      "subtitle": "Conversaciones con IA",
+      "conversation": {
+        "client1": "¡Hola! Me gustaría reservar una cita de cabello para mañana.",
+        "sofia1": "¡Hola! Estaré encantada de ayudarte a programar una cita. Tengo disponibilidad a las 2:00 PM y 4:30 PM mañana. ¿Qué horario te funciona mejor?",
+        "client2": "¡Las 2:00 PM suena perfecto!"
+      },
+      "booked": "Cita Reservada"
+    }
+  },
+  "problem": {
+    "badge": "El Problema",
+    "title": "¿Estás perdiendo clientes porque no puedes responder lo suficientemente rápido?",
+    "subtitle": "Los profesionales de belleza a menudo pierden clientes potenciales debido a respuestas tardías. Cuando los clientes necesitan reservar citas, esperan atención inmediata, o se irán a la siguiente opción.",
+    "missedMessages": {
+      "title": "Mensajes Perdidos",
+      "description": "Cuando estás ocupado con clientes, los mensajes se acumulan y las reservas potenciales se pierden ante competidores que responden más rápido."
+    },
+    "schedulingChaos": {
+      "title": "Caos de Programación",
+      "description": "La gestión manual de citas lleva a dobles reservas, errores de programación y clientes frustrados."
+    },
+    "lostRevenue": {
+      "title": "Ingresos Perdidos",
+      "description": "Cada mensaje perdido es un cliente potencial que se va, costándote cientos de dólares en citas perdidas."
+    }
+  },
+  "solution": {
+    "badge": "La Solución",
+    "title": "Conoce a IA Sofia, tu recepcionista digital 24/7",
+    "subtitle": "IA Sofia responde instantáneamente a las consultas de WhatsApp, gestiona tus servicios, precios y disponibilidad, todo mientras mantiene tu tono profesional y voz de marca.",
+    "features": {
+      "instantResponses": {
+        "title": "Respuestas instantáneas a consultas de clientes",
+        "description": "Nunca hagas esperar a los clientes con respuestas inmediatas y profesionales las 24/7"
+      },
+      "smartBooking": {
+        "title": "Reserva inteligente de citas",
+        "description": "Verifica automáticamente la disponibilidad y reserva citas directamente desde WhatsApp"
+      },
+      "serviceInfo": {
+        "title": "Información de servicios y precios",
+        "description": "Proporciona información detallada sobre tus servicios y precios al instante"
+      },
+      "brandVoice": {
+        "title": "Tu voz de marca mantenida",
+        "description": "Respuestas personalizables que coinciden con la personalidad y profesionalismo de tu salón"
+      },
+      "reminders": {
+        "title": "Recordatorios y confirmaciones automatizadas",
+        "description": "Reduce las ausencias con recordatorios inteligentes de citas y confirmaciones"
+      }
+    },
+    "demo": {
+      "title": "Demo en Vivo de WhatsApp",
+      "subtitle": "Ve a IA Sofia en acción",
+      "conversation": {
+        "client1": "¿Qué servicios ofrecen?",
+        "sofia1": "¡Hola! Ofrecemos cortes de cabello ($45), coloración ($85), manicuras ($35), y tratamientos faciales ($65). ¿Te gustaría reservar alguno de estos servicios?",
+        "client2": "Me gustaría un corte de cabello mañana",
+        "sofia2": "¡Perfecto! Tengo estos horarios disponibles mañana: 10:00 AM, 2:00 PM, y 4:30 PM. ¿Cuál te conviene más?"
+      }
+    }
+  },
+  "benefits": {
+    "badge": "Beneficios Clave",
+    "title": "Transforma tu negocio con comunicación automatizada con clientes",
+    "subtitle": "Descubre cómo IA Sofia puede revolucionar las operaciones de tu negocio de belleza",
+    "saveTime": {
+      "title": "Ahorra Tiempo",
+      "description": "Automatiza tareas repetitivas como responder preguntas comunes y programar citas, liberando horas en tu día.",
+      "metric": "15+ hrs",
+      "metricLabel": "ahorradas por semana"
+    },
+    "gainClients": {
+      "title": "Gana Clientes",
+      "description": "Nunca pierdas una oportunidad con respuestas instantáneas que convierten consultas en reservas y construyen lealtad del cliente.",
+      "metric": "+40%",
+      "metricLabel": "más reservas"
+    },
+    "organizedSchedule": {
+      "title": "Horario Organizado",
+      "description": "Mantén un calendario perfectamente organizado con reservas automatizadas, reprogramación y recordatorios inteligentes.",
+      "metric": "-60%",
+      "metricLabel": "menos ausencias"
+    }
+  },
+  "howItWorks": {
+    "badge": "Cómo Funciona",
+    "title": "Una experiencia perfecta para ti y tus clientes",
+    "subtitle": "Simple, automatizado y efectivo: ve cómo funciona IA Sofia en tres pasos fáciles",
+    "step1": {
+      "title": "El Cliente Escribe",
+      "description": "Tu cliente envía un mensaje de WhatsApp preguntando sobre servicios, precios o citas en cualquier momento del día.",
+      "example": "Hola, me gustaría reservar una manicura para este fin de semana. ¿Qué horarios tienes disponibles?"
+    },
+    "step2": {
+      "title": "IA Sofia Responde",
+      "description": "IA Sofia proporciona instantáneamente información sobre tus servicios, verifica disponibilidad y puede reservar citas al momento.",
+      "example": "¡Hola! Me encantaría ayudarte a reservar una manicura. Este fin de semana tengo disponibilidad el sábado a las 2 PM o el domingo a las 11 AM. ¿Cuál te conviene mejor?"
+    },
+    "step3": {
+      "title": "Cita Confirmada",
+      "description": "Una vez confirmada, tanto tú como tu cliente reciben confirmación con todos los detalles. Tu calendario se actualiza automáticamente.",
+      "example": "¡Perfecto! Tu cita de manicura está confirmada para el sábado 15 de marzo a las 2:00 PM. Te enviaremos un recordatorio 24 horas antes."
+    }
+  },
+  "pricing": {
+    "badge": "Planes de Suscripción",
+    "title": "Elige el plan perfecto para tu negocio de belleza",
+    "subtitle": "Opciones de precios flexibles diseñadas para crecer con tu negocio",
+    "basic": {
+      "title": "Básico",
+      "price": "$29",
+      "period": "/mes",
+      "description": "Perfecto para profesionales independientes",
+      "features": [
+        "Hasta 100 mensajes/mes",
+        "Programación básica de citas",
+        "Respuestas de información de servicios",
+        "Integración con WhatsApp",
+        "Soporte por email"
+      ],
+      "button": "Comenzar Plan Básico"
+    },
+    "professional": {
+      "title": "Profesional",
+      "price": "$59",
+      "period": "/mes",
+      "description": "Ideal para salones en crecimiento",
+      "popular": "Más Popular",
+      "features": [
+        "Hasta 500 mensajes/mes",
+        "Características avanzadas de programación",
+        "Menús de servicios personalizados",
+        "Sistema de recordatorios para clientes",
+        "Soporte prioritario",
+        "Panel de análisis"
+      ],
+      "button": "Comenzar Profesional"
+    },
+    "enterprise": {
+      "title": "Empresarial",
+      "price": "$119",
+      "period": "/mes",
+      "description": "Para negocios de múltiples ubicaciones",
+      "features": [
+        "Mensajes ilimitados",
+        "Soporte para múltiples ubicaciones",
+        "Análisis avanzados",
+        "Integraciones personalizadas",
+        "Gerente de cuenta dedicado",
+        "Soporte telefónico 24/7"
+      ],
+      "button": "Contactar Ventas"
+    },
+    "comparison": {
+      "title": "Comparación de Características",
+      "features": "Características",
+      "basic": "Básico",
+      "pro": "Pro",
+      "premium": "Premium",
+      "monthlyMessages": "Mensajes mensuales",
+      "responseTime": "Tiempo de respuesta",
+      "calendarIntegration": "Integración de calendario",
+      "customResponses": "Respuestas personalizadas",
+      "analyticsDashboard": "Panel de análisis",
+      "teamMembers": "Miembros del equipo",
+      "values": {
+        "basic": {
+          "messages": "100",
+          "responseTime": "Menos de 1 min",
+          "analytics": "Básico",
+          "teamMembers": "1"
+        },
+        "pro": {
+          "messages": "500",
+          "responseTime": "Menos de 30 seg",
+          "analytics": "Avanzado",
+          "teamMembers": "3"
+        },
+        "premium": {
+          "messages": "Ilimitados",
+          "responseTime": "Instantáneo",
+          "analytics": "Premium",
+          "teamMembers": "Ilimitados"
+        }
+      }
+    },
+    "moneyBackGuarantee": "Garantía de devolución de dinero de 30 días",
+    "freeTrialNote": "Todos los planes incluyen una prueba gratuita de 14 días"
+  },
+  "testimonials": {
+    "badge": "Testimonios",
+    "title": "Lo Que Dicen Nuestros Usuarios",
+    "subtitle": "Los profesionales de la belleza aman cómo IA Sofia transforma su negocio",
+    "testimonial1": {
+      "name": "Maria Rodriguez",
+      "role": "Estilista",
+      "quote": "Desde que uso IA Sofia, he aumentado mis reservas en un 30%. A los clientes les encanta lo fácil que es programar citas, incluso cuando estoy ocupada con otros clientes. ¡Es como tener una recepcionista profesional 24/7!",
+      "metric": "+30% más reservas"
+    },
+    "testimonial2": {
+      "name": "Carlos Mendez",
+      "role": "Propietario de Barbería",
+      "quote": "IA Sofia ha sido un cambio radical para mi barbería. Estaba perdiendo clientes por mensajes perdidos de WhatsApp, pero ahora estamos completamente reservados con semanas de anticipación. ¡El ROI es increíble!",
+      "metric": "Completamente reservado semanas adelante"
+    },
+    "testimonial3": {
+      "name": "Ana Ferreira",
+      "role": "Propietaria de Salón de Uñas",
+      "quote": "Finalmente puedo concentrarme en mis clientes en lugar de revisar constantemente mi teléfono. IA Sofia maneja toda la programación e incluso envía recordatorios, reduciendo las ausencias en un 50%. ¡Es increíble!",
+      "metric": "-50% menos ausencias"
+    }
+  },
+  "faq": {
+    "badge": "Preguntas Frecuentes",
+    "title": "Obtén respuestas a preguntas comunes sobre IA Sofia",
+    "subtitle": "Todo lo que necesitas saber sobre nuestro asistente de IA",
+    "q1": {
+      "question": "¿Cómo se conecta IA Sofia a mi WhatsApp?",
+      "answer": "IA Sofia se conecta a través de la API de WhatsApp Business. Después de suscribirte, recibirás instrucciones paso a paso para vincular tu número de negocio. La configuración toma menos de 10 minutos y nuestro equipo de soporte está disponible 24/7 para ayudarte en el proceso."
+    },
+    "q2": {
+      "question": "¿Sabrán mis clientes que están hablando con una IA?",
+      "answer": "IA Sofia está diseñada para comunicarse de manera natural y profesional. Aunque recomendamos transparencia sobre el uso de asistencia de IA, muchos clientes aprecian las respuestas instantáneas. Puedes personalizar cómo Sofia se presenta para coincidir con tus preferencias."
+    },
+    "q3": {
+      "question": "¿Puede IA Sofia manejar solicitudes de reserva complejas?",
+      "answer": "¡Sí! IA Sofia puede manejar varios escenarios de reserva incluyendo verificar disponibilidad, programar citas, reprogramar y gestionar cancelaciones. Para solicitudes muy complejas, Sofia puede transferir sin problemas la conversación a ti."
+    },
+    "q4": {
+      "question": "¿Qué pasa si IA Sofia no sabe cómo responder?",
+      "answer": "IA Sofia está entrenada en escenarios de la industria de belleza, pero si encuentra algo desconocido, educadamente indicará que necesita conectar al cliente contigo directamente. Recibirás una notificación para tomar control de la conversación."
+    },
+    "q5": {
+      "question": "¿Qué tan segura está la información de mis clientes?",
+      "answer": "Tomamos la seguridad en serio. Todos los datos están encriptados y almacenados de forma segura. Cumplimos con GDPR y nunca compartimos la información de tus clientes con terceros. Tus datos te pertenecen y puedes exportarlos o eliminarlos en cualquier momento."
+    },
+    "q6": {
+      "question": "¿Puedo personalizar las respuestas de IA Sofia?",
+      "answer": "¡Absolutamente! Puedes personalizar la personalidad, tono y respuestas específicas de Sofia para coincidir con la voz de tu marca. También puedes agregar servicios personalizados, precios e información de disponibilidad que Sofia usará para responder a los clientes."
+    }
+  },
+  "footer": {
+    "brand": "IA Sofia",
+    "description": "Tu asistente de IA para citas de belleza. Nunca más pierdas un cliente con automatización inteligente y servicio profesional.",
+    "product": {
+      "title": "Producto",
+      "features": "Características",
+      "pricing": "Precios",
+      "faq": "FAQ",
+      "testimonials": "Testimonios",
+      "apiDocs": "Documentación API"
+    },
+    "company": {
+      "title": "Empresa",
+      "about": "Sobre Nosotros",
+      "careers": "Carreras",
+      "blog": "Blog",
+      "contact": "Contacto",
+      "pressKit": "Kit de Prensa"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "cookies": "Política de Cookies",
+      "gdpr": "Cumplimiento GDPR",
+      "dataSecurity": "Seguridad de Datos"
+    },
+    "copyright": "© 2025 IA Sofia. Todos los derechos reservados.",
+    "bottomLinks": {
+      "privacy": "Privacidad",
+      "terms": "Términos",
+      "cookies": "Cookies",
+      "contact": "Contacto"
+    }
+  }
+}

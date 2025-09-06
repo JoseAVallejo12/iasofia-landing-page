@@ -12,13 +12,10 @@
                   d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z">
                 </path>
               </svg></i>
-            The Solution
+            {{ 'solution.badge' | translate }}
           </div>
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900">Meet <span class="text-gradient">IA
-              Sofia</span>, your 24/7 digital receptionist</h2>
-          <p class="text-xl text-gray-600 leading-relaxed">IA Sofia responds instantly to WhatsApp
-            inquiries, manages your services, prices, and availability - all while maintaining your
-            professional tone and brand voice.</p>
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900">{{ 'solution.title' | translate }}</h2>
+          <p class="text-xl text-gray-600 leading-relaxed">{{ 'solution.subtitle' | translate }}</p>
         </div>
         <div class="space-y-4">
           <div class="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-sm">
@@ -32,9 +29,8 @@
                 </svg></i>
             </div>
             <div>
-              <h4 class="font-semibold text-gray-900">Instant responses to client inquiries</h4>
-              <p class="text-gray-600 text-sm">Never keep clients waiting with immediate,
-                professional responses 24/7</p>
+              <h4 class="font-semibold text-gray-900">{{ 'solution.features.instantResponses.title' | translate }}</h4>
+              <p class="text-gray-600 text-sm">{{ 'solution.features.instantResponses.description' | translate }}</p>
             </div>
           </div>
           <div class="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-sm">
@@ -48,9 +44,8 @@
                 </svg></i>
             </div>
             <div>
-              <h4 class="font-semibold text-gray-900">Intelligent appointment scheduling</h4>
-              <p class="text-gray-600 text-sm">Automated booking with real-time availability and
-                calendar integration</p>
+              <h4 class="font-semibold text-gray-900">{{ 'solution.features.smartBooking.title' | translate }}</h4>
+              <p class="text-gray-600 text-sm">{{ 'solution.features.smartBooking.description' | translate }}</p>
             </div>
           </div>
           <div class="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-sm">
@@ -64,9 +59,8 @@
                 </svg></i>
             </div>
             <div>
-              <h4 class="font-semibold text-gray-900">Service and pricing information</h4>
-              <p class="text-gray-600 text-sm">Provide detailed service catalogs and pricing on
-                demand</p>
+              <h4 class="font-semibold text-gray-900">{{ 'solution.features.serviceInfo.title' | translate }}</h4>
+              <p class="text-gray-600 text-sm">{{ 'solution.features.serviceInfo.description' | translate }}</p>
             </div>
           </div>
           <div class="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-sm">
@@ -80,9 +74,8 @@
                 </svg></i>
             </div>
             <div>
-              <h4 class="font-semibold text-gray-900">Automated reminders and confirmations</h4>
-              <p class="text-gray-600 text-sm">Reduce no-shows with smart appointment reminders
-                and confirmations</p>
+              <h4 class="font-semibold text-gray-900">{{ 'solution.features.reminders.title' | translate }}</h4>
+              <p class="text-gray-600 text-sm">{{ 'solution.features.reminders.description' | translate }}</p>
             </div>
           </div>
         </div>
@@ -102,26 +95,24 @@
                       </path>
                     </svg></i>
                 </div>
-                <h3 class="font-bold text-gray-900 text-lg">Live WhatsApp Demo</h3>
-                <p class="text-gray-600 text-sm">See IA Sofia in action</p>
+                <h3 class="font-bold text-gray-900 text-lg">{{ 'solution.demo.title' | translate }}</h3>
+                <p class="text-gray-600 text-sm">{{ 'solution.demo.subtitle' | translate }}</p>
               </div>
               <div class="bg-gray-50 rounded-2xl p-6 space-y-4">
                 <div class="space-y-2">
                   <div class="bg-primary text-white rounded-2xl p-3 text-sm max-w-[80%] ml-auto">
-                    What services do you offer?
+                    {{ 'solution.demo.conversation.client1' | translate }}
                   </div>
                   <div class="bg-white border rounded-2xl p-3 text-sm max-w-[90%]">
-                    Hi! We offer haircuts ($45), hair coloring ($85), manicures ($35), and
-                    facial treatments ($65). Would you like to book any of these services?
+                    {{ 'solution.demo.conversation.sofia1' | translate }}
                   </div>
                 </div>
                 <div class="space-y-2">
                   <div class="bg-primary text-white rounded-2xl p-3 text-sm max-w-[80%] ml-auto">
-                    I'd like a haircut tomorrow
+                    {{ 'solution.demo.conversation.client2' | translate }}
                   </div>
                   <div class="bg-white border rounded-2xl p-3 text-sm max-w-[90%]">
-                    Perfect! I have these slots available tomorrow: 10:00 AM, 2:00 PM, and
-                    4:30 PM. Which works best for you?
+                    {{ 'solution.demo.conversation.sofia2' | translate }}
                   </div>
                 </div>
               </div>

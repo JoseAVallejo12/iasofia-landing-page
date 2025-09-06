@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { HeroSections } from '../organisms/hero-sections/hero-sections';
 import { ProblemSection } from "../organisms/problem-section/problem-section";
@@ -17,6 +18,7 @@ import { HeaderSection } from "../organisms/header-section/header-section";
   selector: 'app-home',
   standalone: true,
   imports: [
+    TranslateModule,
     HeroSections,
     ProblemSection,
     SolutionSection,

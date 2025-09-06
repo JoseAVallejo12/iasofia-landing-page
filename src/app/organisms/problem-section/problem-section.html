@@ -9,13 +9,10 @@
               d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z">
             </path>
           </svg></i>
-        The Problem
+        {{ 'problem.badge' | translate }}
       </div>
-      <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">Are you losing clients because you
-        can't reply fast enough?</h2>
-      <p class="text-xl text-gray-600 leading-relaxed">Beauty professionals often miss potential clients
-        due to delayed responses. When clients need to book appointments, they expect immediate
-        attention - or they'll move on to the next option.</p>
+      <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">{{ 'problem.title' | translate }}</h2>
+      <p class="text-xl text-gray-600 leading-relaxed">{{ 'problem.subtitle' | translate }}</p>
     </div>
     <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-12">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -29,9 +26,8 @@
                 </path>
               </svg></i>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-4">Missed Messages</h3>
-          <p class="text-gray-600 leading-relaxed">When you're busy with clients, messages pile up and
-            potential bookings are lost to competitors who respond faster.</p>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">{{ 'problem.missedMessages.title' | translate }}</h3>
+          <p class="text-gray-600 leading-relaxed">{{ 'problem.missedMessages.description' | translate }}</p>
         </div>
         <div class="bg-white rounded-2xl p-8 card-hover shadow-lg">
           <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6">
@@ -43,9 +39,8 @@
                 </path>
               </svg></i>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-4">Scheduling Chaos</h3>
-          <p class="text-gray-600 leading-relaxed">Manual appointment management leads to
-            double-bookings, scheduling errors, and frustrated clients.</p>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">{{ 'problem.schedulingChaos.title' | translate }}</h3>
+          <p class="text-gray-600 leading-relaxed">{{ 'problem.schedulingChaos.description' | translate }}</p>
         </div>
         <div class="bg-white rounded-2xl p-8 card-hover shadow-lg">
           <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
@@ -57,9 +52,8 @@
                 </path>
               </svg></i>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-4">Client Turnover</h3>
-          <p class="text-gray-600 leading-relaxed">Slow responses push clients to competitors who
-            respond faster, resulting in lost revenue and reputation.</p>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">{{ 'problem.lostRevenue.title' | translate }}</h3>
+          <p class="text-gray-600 leading-relaxed">{{ 'problem.lostRevenue.description' | translate }}</p>
         </div>
       </div>
     </div>
