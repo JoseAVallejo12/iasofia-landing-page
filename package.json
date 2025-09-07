@@ -1,6 +1,8 @@
 {
-  "name": "extraction1",
-  "version": "0.0.0",
+  "name": "iasofia-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for IA Sofia",
+  "author": "Jose A Vallejo <jose.vallejo@iasofia.io>",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
