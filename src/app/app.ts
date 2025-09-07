@@ -1,13 +1,14 @@
 
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from './pages/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { LanguageService } from './services/language.service';
 import { TranslateModule } from '@ngx-translate/core';
+import { HomeTemplateComponent } from './templates/home-template.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomeComponent, TranslateModule],
+  imports: [HomeTemplateComponent, TranslateModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

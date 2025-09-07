@@ -56,11 +56,11 @@
     <div>
       <h3 class="text-lg font-bold mb-6">{{ 'footer.legal.title' | translate }}</h3>
       <ul class="space-y-3">
-        <li><span class="text-gray-400 hover:text-white transition-colors cursor-pointer">{{ 'footer.legal.privacy' | translate }}</span></li>
-        <li><span class="text-gray-400 hover:text-white transition-colors cursor-pointer">{{ 'footer.legal.terms' | translate }}</span></li>
-        <li><span class="text-gray-400 hover:text-white transition-colors cursor-pointer">{{ 'footer.legal.cookies' | translate }}</span></li>
-        <li><span class="text-gray-400 hover:text-white transition-colors cursor-pointer">{{ 'footer.legal.gdpr' | translate }}</span></li>
-        <li><span class="text-gray-400 hover:text-white transition-colors cursor-pointer">{{ 'footer.legal.dataSecurity' | translate }}</span></li>
+        <li><a routerLink="/privacy-policy" class="text-gray-400 hover:text-white transition-colors cursor-pointer">{{ 'footer.legal.privacy' | translate }}</a></li>
+        <li><a routerLink="/terms-of-service" class="text-gray-400 hover:text-white transition-colors cursor-pointer">{{ 'footer.legal.terms' | translate }}</a></li>
+        <li><a routerLink="/cookie-policy" class="text-gray-400 hover:text-white transition-colors cursor-pointer">{{ 'footer.legal.cookies' | translate }}</a></li>
+        <li><a routerLink="/gdpr-compliance" class="text-gray-400 hover:text-white transition-colors cursor-pointer">{{ 'footer.legal.gdpr' | translate }}</a></li>
+        <li><a routerLink="/data-security" class="text-gray-400 hover:text-white transition-colors cursor-pointer">{{ 'footer.legal.dataSecurity' | translate }}</a></li>
       </ul>
     </div>
   </div>
@@ -68,9 +68,9 @@
     <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
       <p class="text-gray-400 text-sm">{{ 'footer.copyright' | translate }}</p>
       <div class="flex space-x-6">
-        <span class="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">{{ 'footer.bottomLinks.privacy' | translate }}</span>
-        <span class="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">{{ 'footer.bottomLinks.terms' | translate }}</span>
-        <span class="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">{{ 'footer.bottomLinks.cookies' | translate }}</span>
+        <a routerLink="/privacy-policy" class="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">{{ 'footer.bottomLinks.privacy' | translate }}</a>
+        <a routerLink="/terms-of-service" class="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">{{ 'footer.bottomLinks.terms' | translate }}</a>
+        <a routerLink="/cookie-policy" class="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">{{ 'footer.bottomLinks.cookies' | translate }}</a>
         <span class="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">{{ 'footer.bottomLinks.contact' | translate }}</span>
       </div>
     </div>

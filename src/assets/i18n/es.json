@@ -315,5 +315,226 @@
       "cookies": "Cookies",
       "contact": "Contacto"
     }
+  },
+  "legal": {
+    "privacy": {
+      "title": "Política de Privacidad",
+      "lastUpdated": "Última actualización",
+      "section1": {
+        "title": "1. Información que Recopilamos",
+        "content": "En IA Sofia, recopilamos información necesaria para proporcionar nuestros servicios de asistente virtual de belleza. Esto incluye información personal que usted proporciona voluntariamente, datos de uso de la plataforma, y información de comunicación a través de WhatsApp Business."
+      },
+      "section2": {
+        "title": "2. Tipos de Datos Recopilados",
+        "content": "Los tipos de información que podemos recopilar incluyen:",
+        "item1": "Información de contacto (nombre, número de teléfono, email)",
+        "item2": "Información de citas y servicios de belleza",
+        "item3": "Conversaciones y mensajes a través de WhatsApp",
+        "item4": "Datos de uso y análisis de la plataforma"
+      },
+      "section3": {
+        "title": "3. Cómo Utilizamos Su Información",
+        "content": "Utilizamos la información recopilada para proporcionar, mantener y mejorar nuestros servicios, procesar reservas, enviar recordatorios de citas, y personalizar su experiencia con nuestro asistente de IA."
+      },
+      "section4": {
+        "title": "4. Compartir y Divulgación de Información",
+        "content": "No vendemos, alquilamos ni compartimos su información personal con terceros, excepto según sea necesario para proporcionar nuestros servicios o cuando sea requerido por ley."
+      },
+      "section5": {
+        "title": "5. Seguridad de Datos",
+        "content": "Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger su información personal contra acceso no autorizado, alteración, divulgación o destrucción."
+      },
+      "section6": {
+        "title": "6. Sus Derechos",
+        "content": "Usted tiene derecho a acceder, corregir, eliminar o restringir el procesamiento de su información personal. También puede objetar el procesamiento y solicitar la portabilidad de datos."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "Si tiene preguntas sobre esta Política de Privacidad, puede contactarnos en:"
+      }
+    },
+    "terms": {
+      "title": "Términos de Servicio",
+      "lastUpdated": "Última actualización",
+      "section1": {
+        "title": "1. Aceptación de Términos",
+        "content": "Al acceder y utilizar los servicios de IA Sofia, usted acepta estar sujeto a estos Términos de Servicio y a todas las leyes y regulaciones aplicables."
+      },
+      "section2": {
+        "title": "2. Descripción del Servicio",
+        "content": "IA Sofia proporciona servicios de asistente virtual de IA para salones de belleza, incluyendo:",
+        "item1": "Gestión automatizada de citas a través de WhatsApp",
+        "item2": "Respuestas automáticas a consultas de clientes",
+        "item3": "Información sobre servicios y precios",
+        "item4": "Recordatorios y confirmaciones de citas"
+      },
+      "section3": {
+        "title": "3. Uso Aceptable",
+        "content": "Usted se compromete a utilizar nuestros servicios de manera responsable y conforme a todas las leyes aplicables. No debe usar el servicio para actividades ilegales, spam, o cualquier actividad que pueda dañar nuestros sistemas."
+      },
+      "section4": {
+        "title": "4. Privacidad y Protección de Datos",
+        "content": "Su privacidad es importante para nosotros. El uso de nuestros servicios también está regido por nuestra Política de Privacidad, que forma parte integral de estos términos."
+      },
+      "section5": {
+        "title": "5. Limitación de Responsabilidad",
+        "content": "IA Sofia no será responsable por daños indirectos, incidentales, especiales o consecuentes que surjan del uso de nuestros servicios."
+      },
+      "section6": {
+        "title": "6. Modificaciones",
+        "content": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Las modificaciones serán efectivas inmediatamente después de su publicación en nuestro sitio web."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "Para preguntas sobre estos Términos de Servicio, contáctenos en:"
+      }
+    },
+    "cookies": {
+      "title": "Política de Cookies",
+      "lastUpdated": "Última actualización",
+      "section1": {
+        "title": "1. ¿Qué son las Cookies?",
+        "content": "Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita nuestro sitio web. Nos ayudan a proporcionar una mejor experiencia de usuario y a entender cómo se utiliza nuestro sitio."
+      },
+      "section2": {
+        "title": "2. Tipos de Cookies que Utilizamos",
+        "content": "Utilizamos diferentes tipos de cookies para varios propósitos:",
+        "essential": {
+          "title": "Cookies Esenciales",
+          "content": "Estas cookies son necesarias para el funcionamiento básico del sitio web y no se pueden desactivar."
+        },
+        "analytics": {
+          "title": "Cookies de Análisis",
+          "content": "Nos ayudan a entender cómo los visitantes interactúan con nuestro sitio web recopilando información de forma anónima."
+        },
+        "marketing": {
+          "title": "Cookies de Marketing",
+          "content": "Se utilizan para mostrar anuncios relevantes y medir la efectividad de nuestras campañas publicitarias."
+        }
+      },
+      "section3": {
+        "title": "3. Control de Cookies",
+        "content": "Puede controlar y/o eliminar las cookies como desee. Puede eliminar todas las cookies que ya están en su computadora y configurar la mayoría de navegadores para evitar que se coloquen."
+      },
+      "section4": {
+        "title": "4. Cookies de Terceros",
+        "content": "Algunos de nuestros socios pueden usar cookies en nuestro sitio. No tenemos acceso ni control sobre estas cookies. Esta Política de Cookies cubre solo las cookies utilizadas por IA Sofia."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "Si tiene preguntas sobre nuestra Política de Cookies, puede contactarnos en:"
+      }
+    },
+    "gdpr": {
+      "title": "Cumplimiento GDPR",
+      "lastUpdated": "Última actualización",
+      "section1": {
+        "title": "1. Compromiso con el GDPR",
+        "content": "IA Sofia se compromete a cumplir plenamente con el Reglamento General de Protección de Datos (GDPR) de la Unión Europea y garantizar la máxima protección de los datos personales de nuestros usuarios."
+      },
+      "section2": {
+        "title": "2. Sus Derechos bajo el GDPR",
+        "content": "Como individuo, usted tiene los siguientes derechos bajo el GDPR:",
+        "right1": {
+          "title": "Derecho de Acceso",
+          "content": "Puede solicitar una copia de los datos personales que tenemos sobre usted."
+        },
+        "right2": {
+          "title": "Derecho de Rectificación",
+          "content": "Puede solicitar que corrijamos cualquier información incorrecta o incompleta."
+        },
+        "right3": {
+          "title": "Derecho de Supresión",
+          "content": "Puede solicitar que eliminemos sus datos personales en ciertas circunstancias."
+        },
+        "right4": {
+          "title": "Derecho de Limitación",
+          "content": "Puede solicitar que limitemos el procesamiento de sus datos personales."
+        },
+        "right5": {
+          "title": "Derecho de Portabilidad",
+          "content": "Puede solicitar que transfiramos sus datos a otra organización."
+        },
+        "right6": {
+          "title": "Derecho de Oposición",
+          "content": "Puede oponerse al procesamiento de sus datos personales en ciertas circunstancias."
+        },
+        "right7": {
+          "title": "Derechos relacionados con la toma de decisiones automatizada",
+          "content": "Tiene derechos relacionados con la toma de decisiones automatizada, incluida la elaboración de perfiles."
+        }
+      },
+      "section3": {
+        "title": "3. Base Legal para el Procesamiento",
+        "content": "Procesamos sus datos personales basándonos en varias bases legales, incluyendo consentimiento, cumplimiento de contratos, intereses legítimos, y cumplimiento de obligaciones legales."
+      },
+      "section4": {
+        "title": "4. Transferencias Internacionales",
+        "content": "Cuando transferimos datos personales fuera del Área Económica Europea, nos aseguramos de que existan las salvaguardas adecuadas conforme al GDPR."
+      },
+      "section5": {
+        "title": "5. Notificación de Violaciones",
+        "content": "En caso de una violación de datos personales que pueda resultar en un alto riesgo para sus derechos y libertades, le notificaremos sin demora indebida."
+      },
+      "contact": {
+        "title": "Contacto del Delegado de Protección de Datos",
+        "content": "Para ejercer sus derechos bajo el GDPR o si tiene preguntas sobre nuestro cumplimiento, puede contactar a nuestro Delegado de Protección de Datos:",
+        "dpo": "Delegado de Protección de Datos",
+        "address": "Dirección",
+        "authority": "Autoridad Supervisora"
+      }
+    },
+    "security": {
+      "title": "Seguridad de Datos",
+      "lastUpdated": "Última actualización",
+      "section1": {
+        "title": "1. Nuestro Compromiso con la Seguridad",
+        "content": "En IA Sofia, la seguridad de sus datos es nuestra máxima prioridad. Implementamos múltiples capas de seguridad para proteger su información personal y garantizar la integridad de nuestros servicios."
+      },
+      "section2": {
+        "title": "2. Medidas de Seguridad Técnicas",
+        "content": "Implementamos las siguientes medidas de seguridad técnicas para proteger sus datos:",
+        "measure1": {
+          "title": "Cifrado de Datos",
+          "content": "Todos los datos se cifran en tránsito y en reposo utilizando estándares de cifrado de nivel empresarial."
+        },
+        "measure2": {
+          "title": "Autenticación Multifactor",
+          "content": "Utilizamos autenticación de múltiples factores para acceder a sistemas críticos."
+        },
+        "measure3": {
+          "title": "Monitoreo Continuo",
+          "content": "Monitoreamos continuamente nuestros sistemas en busca de actividades sospechosas y amenazas de seguridad."
+        },
+        "measure4": {
+          "title": "Copias de Seguridad",
+          "content": "Realizamos copias de seguridad regulares y las almacenamos de forma segura para garantizar la continuidad del servicio."
+        }
+      },
+      "section3": {
+        "title": "3. Medidas de Seguridad Organizativas",
+        "content": "Además de las medidas técnicas, implementamos controles organizativos estrictos:",
+        "item1": "Formación regular en seguridad para todos los empleados",
+        "item2": "Políticas de acceso basadas en el principio de menor privilegio",
+        "item3": "Revisiones de seguridad regulares y pruebas de penetración",
+        "item4": "Planes de respuesta a incidentes bien definidos"
+      },
+      "section4": {
+        "title": "4. Cumplimiento de Estándares",
+        "content": "Cumplimos con los estándares de seguridad más exigentes de la industria, incluyendo ISO 27001, SOC 2 Type II, y las mejores prácticas de seguridad de OWASP."
+      },
+      "section5": {
+        "title": "5. Reportar Problemas de Seguridad",
+        "content": "Si descubre una vulnerabilidad de seguridad o tiene inquietudes sobre la seguridad de nuestros servicios, lo alentamos a que nos lo informe de inmediato a través de nuestro canal de reporte seguro."
+      },
+      "contact": {
+        "title": "Contacto de Seguridad",
+        "content": "Para reportar problemas de seguridad o hacer consultas relacionadas con la seguridad:",
+        "emergency": {
+          "title": "Reporte de Emergencia de Seguridad",
+          "content": "Para problemas críticos de seguridad que requieren atención inmediata:"
+        }
+      }
+    }
   }
 }

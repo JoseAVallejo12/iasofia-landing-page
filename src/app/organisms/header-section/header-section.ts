@@ -2,10 +2,11 @@ import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { LanguageSelectorComponent } from '../../atoms/language-selector.component';
 import { CommonModule } from '@angular/common';
 import {
-    TranslateService,
-    TranslatePipe,
-    TranslateDirective
+  TranslateService,
+  TranslatePipe,
+  TranslateDirective
 } from "@ngx-translate/core";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'header-section',
@@ -24,6 +25,8 @@ export class HeaderSection implements OnInit, OnDestroy {
       this.closeMenu();
     }
   }
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
     // Close menu on page load if window is desktop size
@@ -59,16 +62,35 @@ export class HeaderSection implements OnInit, OnDestroy {
   }
 
   scrollToSection(sectionId: string) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerHeight = 80; // Height of fixed header
-      const elementPosition = element.offsetTop - headerHeight;
+    // Check if we're already on the home page
+    if (this.router.url === '/') {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const headerHeight = 80; // Height of fixed header
+        const elementPosition = element.offsetTop - headerHeight;
 
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
+        window.scrollTo({
+          top: elementPosition,
+          behavior: 'smooth'
+        });
+      }
+      this.closeMenu();
+    } else {
+      this.router.navigate(['/']).then(() => {
+        setTimeout(() => {
+          const element = document.getElementById(sectionId);
+          if (element) {
+            const headerHeight = 80; // Height of fixed header
+            const elementPosition = element.offsetTop - headerHeight;
+
+            window.scrollTo({
+              top: elementPosition,
+              behavior: 'smooth'
+            });
+          }
+        }, 100);
+        this.closeMenu();
       });
     }
-    this.closeMenu(); // Close menu after navigation
   }
 }
