@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { HeaderSection } from '../../organisms/header-section/header-section';
@@ -10,7 +10,11 @@ import { FooterSection } from '../../organisms/footer-section/footer-section';
   imports: [CommonModule, TranslatePipe],
   templateUrl: './terms-of-service.component.html',
 })
-export class TermsOfServiceComponent {
+export class TermsOfServiceComponent implements OnInit {
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
+
   getCurrentDate(): string {
     return new Date().toLocaleDateString('es-ES', {
       year: 'numeric',
