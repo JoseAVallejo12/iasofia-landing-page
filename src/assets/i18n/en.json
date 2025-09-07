@@ -9,6 +9,11 @@
     "login": "Log In",
     "freeTrial": "Free Trial"
   },
+  "theme": {
+    "light": "Switch to dark theme",
+    "dark": "Switch to light theme",
+    "toggle": "Toggle theme"
+  },
   "hero": {
     "badge": "AI-Powered Beauty Assistant",
     "title": {

@@ -6,29 +6,56 @@
 .gradient-bg {
   background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 50%, #60A5FA 100%);
 }
+
+/* Dark mode gradient */
+.dark .gradient-bg {
+  background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 50%, #93C5FD 100%);
+}
+
 .glass-effect {
   backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.9);
 }
+
+.dark .glass-effect {
+  background: rgba(15, 23, 42, 0.9);
+}
+
 .card-hover {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .card-hover:hover {
   transform: translateY(-8px);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
+
+.dark .card-hover:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
 .text-gradient {
   background: linear-gradient(135deg, #1E3A8A, #3B82F6);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.dark .text-gradient {
+  background: linear-gradient(135deg, #3B82F6, #60A5FA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .accent-gradient {
   background: linear-gradient(135deg, #FBBF24, #F59E0B);
 }
+
 .floating-animation {
   animation: float 6s ease-in-out infinite;
 }
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0px);
@@ -38,15 +65,30 @@
   }
 }
 
-/* Header specific overrides - Force white background */
+/* Base styles for light and dark themes */
+@layer base {
+  html {
+    @apply transition-colors duration-300;
+  }
+
+  html.light {
+    @apply bg-white text-gray-900;
+  }
+
+  html.dark {
+    @apply bg-slate-900 text-gray-100;
+  }
+}
+
+/* Header specific overrides */
 #header {
-  background-color: white !important;
+  @apply bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-700;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
 }
 
 header-section {
-  background-color: white !important;
+  @apply bg-white dark:bg-slate-900;
 }
 
 header-section .header-container {

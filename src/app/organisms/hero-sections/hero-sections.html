@@ -1,23 +1,23 @@
-<section id="hero" class="relative overflow-hidden min-h-[600px] md:min-h-[700px] lg:h-[800px] flex items-center py-16 md:py-20">
-  <div class="absolute inset-0 gradient-bg opacity-5"></div>
+<section id="hero" class="relative overflow-hidden min-h-[600px] md:min-h-[700px] lg:h-[800px] flex items-center py-16 md:py-20 bg-white dark:bg-slate-900 transition-colors duration-300">
+  <div class="absolute inset-0 gradient-bg opacity-5 dark:opacity-10"></div>
   <div class="absolute inset-0">
-    <div class="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+    <div class="absolute top-20 left-10 w-72 h-72 bg-primary/10 dark:bg-blue-400/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 dark:bg-yellow-400/20 rounded-full blur-3xl"></div>
   </div>
   <div class="container mx-auto px-4 md:px-6 relative z-10">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
       <div class="space-y-6 md:space-y-8">
         <div class="space-y-4 md:space-y-6">
-          <div class="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full text-primary font-medium text-sm">
+          <div class="inline-flex items-center px-4 py-2 bg-primary/10 dark:bg-blue-400/20 rounded-full text-primary dark:text-blue-400 font-medium text-sm">
             <svg class="w-4 h-4 mr-2" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
               <path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path>
             </svg>
             {{ 'hero.badge' | translate }}
           </div>
-          <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
             {{ 'hero.title.first' | translate }} <span class="text-gradient">{{ 'hero.title.highlight' | translate }}</span> {{ 'hero.title.second' | translate }}
           </h1>
-          <p class="text-lg md:text-xl text-gray-600 leading-relaxed">{{ 'hero.description' | translate }}</p>
+          <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">{{ 'hero.description' | translate }}</p>
         </div>
         <div class="flex flex-col sm:flex-row gap-4">
           <button
@@ -32,7 +32,7 @@
             <span>{{ 'hero.buttons.startTrial' | translate }}</span>
           </button>
           <button
-            class="flex px-8 py-4 border-2 border-gray-200 rounded-xl font-semibold text-gray-700 hover:border-primary hover:text-primary transition-all">
+            class="flex px-8 py-4 border-2 border-gray-200 dark:border-gray-600 rounded-xl font-semibold text-gray-700 dark:text-gray-300 hover:border-primary dark:hover:border-blue-400 hover:text-primary dark:hover:text-blue-400 transition-all">
             <i class="mr-2" style="width: 18px; height: 18px;" data-fa-i2svg=""><svg class="svg-inline--fa fa-play" aria-hidden="true" focusable="false"
                 data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
                 data-fa-i2svg="">
@@ -46,14 +46,14 @@
         <div class="flex items-center space-x-6 pt-4">
           <div class="flex -space-x-3">
             <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg"
-              class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+              class="w-10 h-10 rounded-full border-2 border-white dark:border-gray-700" alt="User">
             <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
-              class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+              class="w-10 h-10 rounded-full border-2 border-white dark:border-gray-700" alt="User">
             <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg"
-              class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+              class="w-10 h-10 rounded-full border-2 border-white dark:border-gray-700" alt="User">
           </div>
-          <div class="text-sm text-gray-600">
-            <span class="font-semibold text-gray-900">{{ 'hero.stats.number' | translate }}</span> {{ 'hero.stats.text' | translate }}
+          <div class="text-sm text-gray-600 dark:text-gray-300">
+            <span class="font-semibold text-gray-900 dark:text-gray-100">{{ 'hero.stats.number' | translate }}</span> {{ 'hero.stats.text' | translate }}
           </div>
         </div>
       </div>
@@ -61,7 +61,7 @@
         <div class="relative">
           <div class="absolute inset-0 gradient-bg rounded-3xl blur-2xl opacity-20 transform rotate-6">
           </div>
-          <div class="relative bg-white rounded-3xl shadow-2xl p-8 max-w-md floating-animation">
+          <div class="relative bg-white dark:bg-slate-800 rounded-3xl shadow-2xl dark:shadow-gray-900/50 p-8 max-w-md floating-animation transition-colors duration-300">
             <div class="space-y-6">
               <div class="flex items-center space-x-3">
                 <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center">
@@ -70,24 +70,24 @@
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-semibold text-gray-900">{{ 'hero.demo.title' | translate }}</h3>
-                  <p class="text-sm text-gray-500">{{ 'hero.demo.subtitle' | translate }}</p>
+                  <h3 class="font-semibold text-gray-900 dark:text-gray-100">{{ 'hero.demo.title' | translate }}</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">{{ 'hero.demo.subtitle' | translate }}</p>
                 </div>
               </div>
-              <div class="bg-gray-50 rounded-xl p-4 space-y-3">
-                <div class="bg-primary text-white rounded-lg p-3 ml-8">
+              <div class="bg-gray-50 dark:bg-slate-700 rounded-xl p-4 space-y-3 transition-colors duration-300">
+                <div class="bg-primary dark:bg-blue-600 text-white rounded-lg p-3 ml-8">
                   <p class="text-sm">{{ 'hero.demo.conversation.client1' | translate }}</p>
                 </div>
-                <div class="bg-white border rounded-lg p-3 mr-8">
-                  <p class="text-sm">{{ 'hero.demo.conversation.sofia1' | translate }}</p>
+                <div class="bg-white dark:bg-slate-600 border dark:border-slate-500 rounded-lg p-3 mr-8 transition-colors duration-300">
+                  <p class="text-sm text-gray-900 dark:text-gray-100">{{ 'hero.demo.conversation.sofia1' | translate }}</p>
                 </div>
-                <div class="bg-primary text-white rounded-lg p-3 ml-8">
+                <div class="bg-primary dark:bg-blue-600 text-white rounded-lg p-3 ml-8">
                   <p class="text-sm">{{ 'hero.demo.conversation.client2' | translate }}</p>
                 </div>
               </div>
-              <div class="flex items-center justify-between bg-green-50 rounded-lg p-3">
-                <span class="text-sm font-medium text-green-800">{{ 'hero.demo.booked' | translate }}</span>
-                <svg class="w-6 h-6 text-green-600" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <div class="flex items-center justify-between bg-green-50 dark:bg-green-900/30 rounded-lg p-3 transition-colors duration-300">
+                <span class="text-sm font-medium text-green-800 dark:text-green-400">{{ 'hero.demo.booked' | translate }}</span>
+                <svg class="w-6 h-6 text-green-600 dark:text-green-400" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
                 </svg>
               </div>

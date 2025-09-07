@@ -9,6 +9,11 @@
     "login": "Iniciar Sesión",
     "freeTrial": "Prueba Gratuita"
   },
+  "theme": {
+    "light": "Cambiar a tema oscuro",
+    "dark": "Cambiar a tema claro",
+    "toggle": "Cambiar tema"
+  },
     "finalCta": {
     "badge": "¿Listo para Comenzar?",
     "title": "¿Listo para transformar tu negocio de belleza?",

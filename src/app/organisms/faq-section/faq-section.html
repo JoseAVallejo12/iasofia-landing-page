@@ -1,20 +1,23 @@
-<section id="faq" class="py-24 bg-white">
-  <div class="container mx-auto px-6">
+<section id="faq" class="py-24 bg-gray-50 dark:bg-slate-900 relative overflow-hidden transition-colors duration-300">
+  <div class="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-indigo-50/50 dark:from-blue-900/10 dark:to-indigo-900/10"></div>
+  <div class="absolute top-0 left-0 w-96 h-96 bg-blue-400/5 dark:bg-blue-400/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-indigo-400/5 dark:bg-indigo-400/10 rounded-full blur-3xl"></div>
+  <div class="container mx-auto px-6 relative">
     <div class="max-w-4xl mx-auto text-center mb-20">
-      <div class="inline-flex items-center px-4 py-2 bg-blue-50 rounded-full text-blue-600 font-medium text-sm mb-6">
+      <div class="inline-flex items-center px-4 py-2 bg-blue-50 dark:bg-blue-900/30 rounded-full text-blue-600 dark:text-blue-400 font-medium text-sm mb-6 transition-colors duration-300">
         <svg class="w-4 h-4 mr-2" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path>
         </svg>
         {{ 'faq.badge' | translate }}
       </div>
-      <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">{{ 'faq.title' | translate }}</h2>
-      <p class="text-xl text-gray-600 leading-relaxed">{{ 'faq.subtitle' | translate }}</p>
+      <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-8 transition-colors duration-300">{{ 'faq.title' | translate }}</h2>
+      <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed transition-colors duration-300">{{ 'faq.subtitle' | translate }}</p>
     </div>
     <div class="max-w-4xl mx-auto space-y-4">
-      <div class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl overflow-hidden">
-        <button class="flex justify-between items-center w-full text-left p-6 hover:bg-white/50 transition-all">
-          <span class="font-semibold text-gray-900 text-lg">{{ 'faq.q1.question' | translate }}</span>
-          <i class="text-gray-600 transform transition-transform" data-fa-i2svg=""><svg
+      <div class="bg-gradient-to-br from-blue-50/30 to-indigo-50/30 dark:from-slate-800 dark:to-slate-800 rounded-2xl overflow-hidden border border-gray-200/50 dark:border-slate-700 transition-colors duration-300">
+        <button class="flex justify-between items-center w-full text-left p-6 hover:bg-white/50 dark:hover:bg-slate-700/50 transition-all">
+          <span class="font-semibold text-gray-900 dark:text-gray-100 text-lg transition-colors duration-300">{{ 'faq.q1.question' | translate }}</span>
+          <i class="text-gray-600 dark:text-gray-400 transform transition-transform" data-fa-i2svg=""><svg
               class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas"
               data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
               data-fa-i2svg="">
@@ -24,16 +27,16 @@
             </svg></i>
         </button>
         <div class="px-6 pb-6">
-          <div class="bg-white rounded-xl p-6 shadow-sm">
-            <p class="text-gray-700 leading-relaxed">{{ 'faq.q1.answer' | translate }}</p>
+          <div class="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-sm dark:shadow-slate-900/20 transition-colors duration-300">
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">{{ 'faq.q1.answer' | translate }}</p>
           </div>
         </div>
       </div>
 
-      <div class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl overflow-hidden">
-        <button class="flex justify-between items-center w-full text-left p-6 hover:bg-white/50 transition-all">
-          <span class="font-semibold text-gray-900 text-lg">{{ 'faq.q2.question' | translate }}</span>
-          <i class="text-gray-600 transform transition-transform" data-fa-i2svg=""><svg
+      <div class="bg-gradient-to-br from-blue-50/30 to-indigo-50/30 dark:from-slate-800 dark:to-slate-800 rounded-2xl overflow-hidden border border-gray-200/50 dark:border-slate-700 transition-colors duration-300">
+        <button class="flex justify-between items-center w-full text-left p-6 hover:bg-white/50 dark:hover:bg-slate-700/50 transition-all">
+          <span class="font-semibold text-gray-900 dark:text-gray-100 text-lg transition-colors duration-300">{{ 'faq.q2.question' | translate }}</span>
+          <i class="text-gray-600 dark:text-gray-400 transform transition-transform" data-fa-i2svg=""><svg
               class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas"
               data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
               data-fa-i2svg="">
@@ -43,16 +46,16 @@
             </svg></i>
         </button>
         <div class="px-6 pb-6">
-          <div class="bg-white rounded-xl p-6 shadow-sm">
-            <p class="text-gray-700 leading-relaxed">{{ 'faq.q2.answer' | translate }}</p>
+          <div class="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-sm dark:shadow-slate-900/20 transition-colors duration-300">
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">{{ 'faq.q2.answer' | translate }}</p>
           </div>
         </div>
       </div>
 
-      <div class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl overflow-hidden">
-        <button class="flex justify-between items-center w-full text-left p-6 hover:bg-white/50 transition-all">
-          <span class="font-semibold text-gray-900 text-lg">{{ 'faq.q3.question' | translate }}</span>
-          <i class="text-gray-600 transform transition-transform" data-fa-i2svg=""><svg
+      <div class="bg-gradient-to-br from-blue-50/30 to-indigo-50/30 dark:from-slate-800 dark:to-slate-800 rounded-2xl overflow-hidden border border-gray-200/50 dark:border-slate-700 transition-colors duration-300">
+        <button class="flex justify-between items-center w-full text-left p-6 hover:bg-white/50 dark:hover:bg-slate-700/50 transition-all">
+          <span class="font-semibold text-gray-900 dark:text-gray-100 text-lg transition-colors duration-300">{{ 'faq.q3.question' | translate }}</span>
+          <i class="text-gray-600 dark:text-gray-400 transform transition-transform" data-fa-i2svg=""><svg
               class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas"
               data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
               data-fa-i2svg="">
@@ -62,16 +65,16 @@
             </svg></i>
         </button>
         <div class="px-6 pb-6">
-          <div class="bg-white rounded-xl p-6 shadow-sm">
-            <p class="text-gray-700 leading-relaxed">{{ 'faq.q3.answer' | translate }}</p>
+          <div class="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-sm dark:shadow-slate-900/20 transition-colors duration-300">
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">{{ 'faq.q3.answer' | translate }}</p>
           </div>
         </div>
       </div>
 
-      <div class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl overflow-hidden">
-        <button class="flex justify-between items-center w-full text-left p-6 hover:bg-white/50 transition-all">
-          <span class="font-semibold text-gray-900 text-lg">{{ 'faq.q4.question' | translate }}</span>
-          <i class="text-gray-600 transform transition-transform" data-fa-i2svg=""><svg
+      <div class="bg-gradient-to-br from-blue-50/30 to-indigo-50/30 dark:from-slate-800 dark:to-slate-800 rounded-2xl overflow-hidden border border-gray-200/50 dark:border-slate-700 transition-colors duration-300">
+        <button class="flex justify-between items-center w-full text-left p-6 hover:bg-white/50 dark:hover:bg-slate-700/50 transition-all">
+          <span class="font-semibold text-gray-900 dark:text-gray-100 text-lg transition-colors duration-300">{{ 'faq.q4.question' | translate }}</span>
+          <i class="text-gray-600 dark:text-gray-400 transform transition-transform" data-fa-i2svg=""><svg
               class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas"
               data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
               data-fa-i2svg="">
@@ -81,16 +84,16 @@
             </svg></i>
         </button>
         <div class="px-6 pb-6">
-          <div class="bg-white rounded-xl p-6 shadow-sm">
-            <p class="text-gray-700 leading-relaxed">{{ 'faq.q4.answer' | translate }}</p>
+          <div class="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-sm dark:shadow-slate-900/20 transition-colors duration-300">
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">{{ 'faq.q4.answer' | translate }}</p>
           </div>
         </div>
       </div>
 
-      <div class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl overflow-hidden">
-        <button class="flex justify-between items-center w-full text-left p-6 hover:bg-white/50 transition-all">
-          <span class="font-semibold text-gray-900 text-lg">{{ 'faq.q5.question' | translate }}</span>
-          <i class="text-gray-600 transform transition-transform" data-fa-i2svg=""><svg
+      <div class="bg-gradient-to-br from-blue-50/30 to-indigo-50/30 dark:from-slate-800 dark:to-slate-800 rounded-2xl overflow-hidden border border-gray-200/50 dark:border-slate-700 transition-colors duration-300">
+        <button class="flex justify-between items-center w-full text-left p-6 hover:bg-white/50 dark:hover:bg-slate-700/50 transition-all">
+          <span class="font-semibold text-gray-900 dark:text-gray-100 text-lg transition-colors duration-300">{{ 'faq.q5.question' | translate }}</span>
+          <i class="text-gray-600 dark:text-gray-400 transform transition-transform" data-fa-i2svg=""><svg
               class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas"
               data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
               data-fa-i2svg="">
@@ -100,16 +103,16 @@
             </svg></i>
         </button>
         <div class="px-6 pb-6">
-          <div class="bg-white rounded-xl p-6 shadow-sm">
-            <p class="text-gray-700 leading-relaxed">{{ 'faq.q5.answer' | translate }}</p>
+          <div class="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-sm dark:shadow-slate-900/20 transition-colors duration-300">
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">{{ 'faq.q5.answer' | translate }}</p>
           </div>
         </div>
       </div>
 
-      <div class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl overflow-hidden">
-        <button class="flex justify-between items-center w-full text-left p-6 hover:bg-white/50 transition-all">
-          <span class="font-semibold text-gray-900 text-lg">{{ 'faq.q6.question' | translate }}</span>
-          <i class="text-gray-600 transform transition-transform" data-fa-i2svg=""><svg
+      <div class="bg-gradient-to-br from-blue-50/30 to-indigo-50/30 dark:from-slate-800 dark:to-slate-800 rounded-2xl overflow-hidden border border-gray-200/50 dark:border-slate-700 transition-colors duration-300">
+        <button class="flex justify-between items-center w-full text-left p-6 hover:bg-white/50 dark:hover:bg-slate-700/50 transition-all">
+          <span class="font-semibold text-gray-900 dark:text-gray-100 text-lg transition-colors duration-300">{{ 'faq.q6.question' | translate }}</span>
+          <i class="text-gray-600 dark:text-gray-400 transform transition-transform" data-fa-i2svg=""><svg
               class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas"
               data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
               data-fa-i2svg="">
@@ -119,8 +122,8 @@
             </svg></i>
         </button>
         <div class="px-6 pb-6">
-          <div class="bg-white rounded-xl p-6 shadow-sm">
-            <p class="text-gray-700 leading-relaxed">{{ 'faq.q6.answer' | translate }}</p>
+          <div class="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-sm dark:shadow-slate-900/20 transition-colors duration-300">
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">{{ 'faq.q6.answer' | translate }}</p>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { LanguageSelectorComponent } from '../../atoms/language-selector.component';
+import { ThemeToggleComponent } from '../../atoms/theme-toggle.component';
 import { CommonModule } from '@angular/common';
 import {
   TranslateService,
@@ -11,7 +12,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'header-section',
   standalone: true,
-  imports: [TranslatePipe, LanguageSelectorComponent, CommonModule],
+  imports: [TranslatePipe, LanguageSelectorComponent, ThemeToggleComponent, CommonModule],
   templateUrl: './header-section.html',
   styleUrls: ['./header-section.scss']
 })

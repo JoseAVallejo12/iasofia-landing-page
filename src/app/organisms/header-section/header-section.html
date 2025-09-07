@@ -1,4 +1,4 @@
-<div class="bg-white w-full border-b border-gray-200 shadow-sm relative z-50">
+<div class="bg-white dark:bg-slate-900 w-full border-b border-gray-200 dark:border-slate-700 shadow-sm relative z-50 transition-colors duration-300">
   <div class="container mx-auto px-6 py-4 flex items-center justify-between">
     <div class="flex items-center">
       <a (click)="scrollToSection('hero')" class="flex items-center cursor-pointer">
@@ -11,42 +11,44 @@
               </path>
             </svg></i>
         </div>
-        <span class="text-xl font-bold text-primary">{{ 'header.brand' | translate }}</span>
+        <span class="text-xl font-bold text-primary dark:text-blue-400">{{ 'header.brand' | translate }}</span>
       </a>
     </div>
 
     <!-- Desktop Navigation -->
     <nav class="hidden xl:flex space-x-8">
       <span (click)="scrollToSection('features')"
-        class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.features' |
+        class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 cursor-pointer font-medium transition-colors">{{ 'header.features' |
         translate }}</span>
       <span (click)="scrollToSection('how-it-works')"
-        class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.howItWorks' |
+        class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 cursor-pointer font-medium transition-colors">{{ 'header.howItWorks' |
         translate }}</span>
       <span (click)="scrollToSection('pricing')"
-        class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.pricing' |
+        class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 cursor-pointer font-medium transition-colors">{{ 'header.pricing' |
         translate }}</span>
       <span (click)="scrollToSection('faq')"
-        class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.faq' |
+        class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 cursor-pointer font-medium transition-colors">{{ 'header.faq' |
         translate }}</span>
       <span (click)="scrollToSection('contact')"
-        class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.contact' |
+        class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 cursor-pointer font-medium transition-colors">{{ 'header.contact' |
         translate }}</span>
     </nav>
 
     <!-- Desktop Actions -->
     <div class="hidden xl:flex items-center space-x-4">
+      <app-theme-toggle></app-theme-toggle>
       <app-language-selector></app-language-selector>
       <span
         class="px-5 py-2.5 gradient-bg text-white rounded-xl hover:shadow-lg hover:-translate-y-0.5 cursor-pointer font-medium transition-all duration-300 shadow-md hover:shadow-xl">{{
         'header.freeTrial' | translate }}</span>
     </div>
 
-    <!-- Mobile/Tablet Language Selector -->
+    <!-- Mobile/Tablet Theme and Language Selectors -->
     <div class="flex xl:hidden items-center space-x-3">
+      <app-theme-toggle></app-theme-toggle>
       <app-language-selector></app-language-selector>
       <!-- Mobile Menu Button -->
-      <button (click)="toggleMenu()" class="text-gray-700 z-50 relative menu-icon">
+      <button (click)="toggleMenu()" class="text-gray-700 dark:text-gray-300 z-50 relative menu-icon">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" [class.hidden]="isMenuOpen">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
@@ -55,21 +57,21 @@
         </svg>
       </button>
     </div>
-  </div><!-- Mobile Menu Overlay -->
+  </div>  <!-- Mobile Menu Overlay -->
   <div *ngIf="isMenuOpen" class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm z-40 xl:hidden mobile-overlay"
     (click)="closeMenu()">
   </div>
 
   <!-- Mobile Menu Slide Panel -->
   <div
-    class="fixed top-0 right-0 h-full w-80 bg-white backdrop-blur-lg shadow-2xl transform transition-transform duration-300 ease-in-out z-50 xl:hidden"
+    class="fixed top-0 right-0 h-full w-80 bg-white dark:bg-slate-900 backdrop-blur-lg shadow-2xl transform transition-transform duration-300 ease-in-out z-50 xl:hidden"
     [class.translate-x-0]="isMenuOpen" [class.translate-x-full]="!isMenuOpen">
 
     <!-- Close Button -->
     <div class="absolute top-4 right-4 z-10">
       <button (click)="closeMenu()"
-        class="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95">
-        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        class="w-10 h-10 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95">
+        <svg class="w-6 h-6 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
@@ -78,7 +80,7 @@
     <div class="p-6 pt-20">
       <!-- Menu Title -->
       <div class="mb-8">
-        <h2 class="text-xl font-bold text-gray-800 flex items-center">
+        <h2 class="text-xl font-bold text-gray-800 dark:text-gray-200 flex items-center">
           <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center mr-3">
             <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 640 512">
               <path
@@ -92,29 +94,33 @@
       <!-- Mobile Navigation -->
       <nav class="space-y-2">
         <div (click)="scrollToSection('features')"
-          class="mobile-nav-item text-gray-700 hover:text-primary cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 pb-3 px-4 py-3 rounded-lg -mx-4">
+          class="mobile-nav-item text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 dark:border-gray-700 pb-3 px-4 py-3 rounded-lg -mx-4">
           {{ 'header.features' | translate }}
         </div>
         <div (click)="scrollToSection('how-it-works')"
-          class="mobile-nav-item text-gray-700 hover:text-primary cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 pb-3 px-4 py-3 rounded-lg -mx-4">
+          class="mobile-nav-item text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 dark:border-gray-700 pb-3 px-4 py-3 rounded-lg -mx-4">
           {{ 'header.howItWorks' | translate }}
         </div>
         <div (click)="scrollToSection('pricing')"
-          class="mobile-nav-item text-gray-700 hover:text-primary cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 pb-3 px-4 py-3 rounded-lg -mx-4">
+          class="mobile-nav-item text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 dark:border-gray-700 pb-3 px-4 py-3 rounded-lg -mx-4">
           {{ 'header.pricing' | translate }}
         </div>
         <div (click)="scrollToSection('faq')"
-          class="mobile-nav-item text-gray-700 hover:text-primary cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 pb-3 px-4 py-3 rounded-lg -mx-4">
+          class="mobile-nav-item text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 dark:border-gray-700 pb-3 px-4 py-3 rounded-lg -mx-4">
           {{ 'header.faq' | translate }}
         </div>
         <div (click)="scrollToSection('contact')"
-          class="mobile-nav-item text-gray-700 hover:text-primary cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 pb-3 px-4 py-3 rounded-lg -mx-4">
+          class="mobile-nav-item text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 dark:border-gray-700 pb-3 px-4 py-3 rounded-lg -mx-4">
           {{ 'header.contact' | translate }}
         </div>
       </nav>
 
-      <!-- Mobile Language Selector -->
-      <div class="mt-8 pt-6 border-t border-gray-200">
+      <!-- Mobile Theme and Language Selectors -->
+      <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+        <div class="mb-6 flex items-center justify-between">
+          <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Tema:</span>
+          <app-theme-toggle></app-theme-toggle>
+        </div>
         <div class="mb-6">
           <app-language-selector></app-language-selector>
         </div>
