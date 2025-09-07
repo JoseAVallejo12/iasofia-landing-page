@@ -1,36 +1,130 @@
-<div class="container mx-auto px-6 py-4 flex items-center justify-between">
-  <div class="flex items-center">
-    <a (click)="scrollToSection('hero')" class="flex items-center cursor-pointer">
-      <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center mr-3">
-        <i class="text-white text-lg" data-fa-i2svg=""><svg class="svg-inline--fa fa-robot" aria-hidden="true"
-            focusable="false" data-prefix="fas" data-icon="robot" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 640 512" data-fa-i2svg="">
-            <path fill="currentColor"
-              d="M320 0c17.7 0 32 14.3 32 32V96H472c39.8 0 72 32.2 72 72V440c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72H288V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H208zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H304zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H400zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224H64V416H48c-26.5 0-48-21.5-48-48V272c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H576V224h16z">
-            </path>
-          </svg></i>
+<div class="bg-white w-full border-b border-gray-200 shadow-sm relative z-50">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center">
+      <a (click)="scrollToSection('hero')" class="flex items-center cursor-pointer">
+        <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center mr-3">
+          <i class="text-white text-lg" data-fa-i2svg=""><svg class="svg-inline--fa fa-robot" aria-hidden="true"
+              focusable="false" data-prefix="fas" data-icon="robot" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512" data-fa-i2svg="">
+              <path fill="currentColor"
+                d="M320 0c17.7 0 32 14.3 32 32V96H472c39.8 0 72 32.2 72 72V440c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72H288V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H208zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H304zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H400zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224H64V416H48c-26.5 0-48-21.5-48-48V272c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H576V224h16z">
+              </path>
+            </svg></i>
+        </div>
+        <span class="text-xl font-bold text-primary">{{ 'header.brand' | translate }}</span>
+      </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden xl:flex space-x-8">
+      <span (click)="scrollToSection('features')"
+        class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.features' |
+        translate }}</span>
+      <span (click)="scrollToSection('how-it-works')"
+        class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.howItWorks' |
+        translate }}</span>
+      <span (click)="scrollToSection('pricing')"
+        class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.pricing' |
+        translate }}</span>
+      <span (click)="scrollToSection('faq')"
+        class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.faq' |
+        translate }}</span>
+      <span (click)="scrollToSection('contact')"
+        class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.contact' |
+        translate }}</span>
+    </nav>
+
+    <!-- Desktop Actions -->
+    <div class="hidden xl:flex items-center space-x-4">
+      <app-language-selector></app-language-selector>
+      <span
+        class="px-5 py-2.5 gradient-bg text-white rounded-xl hover:shadow-lg hover:-translate-y-0.5 cursor-pointer font-medium transition-all duration-300 shadow-md hover:shadow-xl">{{
+        'header.freeTrial' | translate }}</span>
+    </div>
+
+    <!-- Mobile/Tablet Language Selector -->
+    <div class="flex xl:hidden items-center space-x-3">
+      <app-language-selector></app-language-selector>
+      <!-- Mobile Menu Button -->
+      <button (click)="toggleMenu()" class="text-gray-700 z-50 relative menu-icon">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" [class.hidden]="isMenuOpen">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" [class.hidden]="!isMenuOpen">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </div><!-- Mobile Menu Overlay -->
+  <div *ngIf="isMenuOpen" class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm z-40 xl:hidden mobile-overlay"
+    (click)="closeMenu()">
+  </div>
+
+  <!-- Mobile Menu Slide Panel -->
+  <div
+    class="fixed top-0 right-0 h-full w-80 bg-white backdrop-blur-lg shadow-2xl transform transition-transform duration-300 ease-in-out z-50 xl:hidden"
+    [class.translate-x-0]="isMenuOpen" [class.translate-x-full]="!isMenuOpen">
+
+    <!-- Close Button -->
+    <div class="absolute top-4 right-4 z-10">
+      <button (click)="closeMenu()"
+        class="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95">
+        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="p-6 pt-20">
+      <!-- Menu Title -->
+      <div class="mb-8">
+        <h2 class="text-xl font-bold text-gray-800 flex items-center">
+          <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center mr-3">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 640 512">
+              <path
+                d="M320 0c17.7 0 32 14.3 32 32V96H472c39.8 0 72 32.2 72 72V440c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72H288V32c0-17.7 14.3-32 32-32z" />
+            </svg>
+          </div>
+          {{ 'header.brand' | translate }}
+        </h2>
       </div>
-      <span class="text-xl font-bold text-primary">{{ 'header.brand' | translate }}</span>
-    </a>
+
+      <!-- Mobile Navigation -->
+      <nav class="space-y-2">
+        <div (click)="scrollToSection('features')"
+          class="mobile-nav-item text-gray-700 hover:text-primary cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 pb-3 px-4 py-3 rounded-lg -mx-4">
+          {{ 'header.features' | translate }}
+        </div>
+        <div (click)="scrollToSection('how-it-works')"
+          class="mobile-nav-item text-gray-700 hover:text-primary cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 pb-3 px-4 py-3 rounded-lg -mx-4">
+          {{ 'header.howItWorks' | translate }}
+        </div>
+        <div (click)="scrollToSection('pricing')"
+          class="mobile-nav-item text-gray-700 hover:text-primary cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 pb-3 px-4 py-3 rounded-lg -mx-4">
+          {{ 'header.pricing' | translate }}
+        </div>
+        <div (click)="scrollToSection('faq')"
+          class="mobile-nav-item text-gray-700 hover:text-primary cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 pb-3 px-4 py-3 rounded-lg -mx-4">
+          {{ 'header.faq' | translate }}
+        </div>
+        <div (click)="scrollToSection('contact')"
+          class="mobile-nav-item text-gray-700 hover:text-primary cursor-pointer font-medium transition-all duration-300 text-lg border-b border-gray-100 pb-3 px-4 py-3 rounded-lg -mx-4">
+          {{ 'header.contact' | translate }}
+        </div>
+      </nav>
+
+      <!-- Mobile Language Selector -->
+      <div class="mt-8 pt-6 border-t border-gray-200">
+        <div class="mb-6">
+          <app-language-selector></app-language-selector>
+        </div>
+
+        <!-- Mobile CTA Button -->
+        <button
+          class="w-full px-6 py-3 gradient-bg text-white rounded-xl hover:shadow-lg hover:-translate-y-0.5 font-medium transition-all duration-300 shadow-md hover:shadow-xl">
+          {{ 'header.freeTrial' | translate }}
+        </button>
+      </div>
+    </div>
   </div>
-  <nav class="hidden md:flex space-x-8">
-    <span (click)="scrollToSection('features')" class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.features' | translate }}</span>
-    <span (click)="scrollToSection('how-it-works')" class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.howItWorks' | translate }}</span>
-    <span (click)="scrollToSection('pricing')" class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.pricing' | translate }}</span>
-    <span (click)="scrollToSection('faq')" class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.faq' | translate }}</span>
-    <span (click)="scrollToSection('contact')" class="text-gray-600 hover:text-primary cursor-pointer font-medium transition-colors">{{ 'header.contact' | translate }}</span>
-  </nav>
-  <div class="flex items-center space-x-4">
-    <app-language-selector></app-language-selector>
-    <span class="px-5 py-2.5 gradient-bg text-white rounded-xl hover:shadow-lg cursor-pointer font-medium transition-all transform hover:scale-105">{{ 'header.freeTrial' | translate }}</span>
-  </div>
-  <button class="md:hidden text-gray-700">
-    <i class="text-xl" data-fa-i2svg=""><svg class="svg-inline--fa fa-bars" aria-hidden="true" focusable="false"
-        data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-        data-fa-i2svg="">
-        <path fill="currentColor"
-          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
-        </path>
-      </svg></i>
-  </button>
 </div>

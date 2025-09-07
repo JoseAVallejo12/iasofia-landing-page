@@ -1,0 +1,33 @@
+// Smooth transitions for menu icons
+.menu-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+// Animation for mobile menu overlay
+.mobile-overlay {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Hover effects for mobile menu items
+.mobile-nav-item {
+  &:hover {
+    transform: translateX(-4px);
+    color: #3F20FB;
+    background-color: rgba(63, 32, 251, 0.05);
+    border-color: rgba(63, 32, 251, 0.2);
+  }
+}
+
+// Gradient background for buttons (keeping this as it's a custom gradient)
+.gradient-bg {
+  background: linear-gradient(135deg, #3F20FB, #6B46C1);
+}
