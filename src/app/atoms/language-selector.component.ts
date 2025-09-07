@@ -26,7 +26,7 @@ import { LanguageService } from '../services/language.service';
         <button
           *ngFor="let lang of languages"
           (click)="selectLanguage(lang.code)"
-          class="w-full flex items-center space-x-2 px-4 py-2 text-left hover:bg-gray-50 dark:hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg text-gray-700 dark:text-gray-200"
+          class="w-full flex items-center space-x-2 px-4 py-2 text-left hover:bg-gray-50 hover:text-primary dark:hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg text-gray-700 dark:text-gray-200"
           [class.bg-primary]="lang.code === currentLanguage"
           [class.text-white]="lang.code === currentLanguage"
           [class.dark:bg-blue-600]="lang.code === currentLanguage"

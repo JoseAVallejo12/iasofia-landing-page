@@ -36,12 +36,12 @@
     </div>
     <div>
       <h3 class="text-lg font-bold mb-6 text-gray-900 dark:text-white transition-colors duration-300">{{ 'footer.product.title' | translate }}</h3>
-      <ul class="space-y-3">
-        <li><span class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition-colors cursor-pointer">{{ 'footer.product.features' | translate }}</span></li>
-        <li><span class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition-colors cursor-pointer">{{ 'footer.product.pricing' | translate }}</span></li>
-        <li><span class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition-colors cursor-pointer">{{ 'footer.product.faq' | translate }}</span></li>
-        <li><span class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition-colors cursor-pointer">{{ 'footer.product.testimonials' | translate }}</span></li>
-        <li><span class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition-colors cursor-pointer">{{ 'footer.product.apiDocs' | translate }}</span></li>
+      <ul class="space-y-3" (click)="scrollToSection($event)">
+        <li data-navigate-to="features"><span class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition-colors cursor-pointer">{{ 'footer.product.features' | translate }}</span></li>
+        <li data-navigate-to="pricing"><span class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition-colors cursor-pointer">{{ 'footer.product.pricing' | translate }}</span></li>
+        <li data-navigate-to="faq"><span class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition-colors cursor-pointer">{{ 'footer.product.faq' | translate }}</span></li>
+        <li data-navigate-to="testimonials"><span class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition-colors cursor-pointer">{{ 'footer.product.testimonials' | translate }}</span></li>
+        <li data-navigate-to="apiDocs"><span class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition-colors cursor-pointer">{{ 'footer.product.apiDocs' | translate }}</span></li>
       </ul>
     </div>
     <div>

@@ -8,6 +8,7 @@ import {
   TranslateDirective
 } from "@ngx-translate/core";
 import { Router } from '@angular/router';
+import { scrollToSection } from '../../utils/helpers/scroll-to-secction';
 
 @Component({
   selector: 'header-section',
@@ -63,35 +64,6 @@ export class HeaderSection implements OnInit, OnDestroy {
   }
 
   scrollToSection(sectionId: string) {
-    // Check if we're already on the home page
-    if (this.router.url === '/') {
-      const element = document.getElementById(sectionId);
-      if (element) {
-        const headerHeight = 80; // Height of fixed header
-        const elementPosition = element.offsetTop - headerHeight;
-
-        window.scrollTo({
-          top: elementPosition,
-          behavior: 'smooth'
-        });
-      }
-      this.closeMenu();
-    } else {
-      this.router.navigate(['/']).then(() => {
-        setTimeout(() => {
-          const element = document.getElementById(sectionId);
-          if (element) {
-            const headerHeight = 80; // Height of fixed header
-            const elementPosition = element.offsetTop - headerHeight;
-
-            window.scrollTo({
-              top: elementPosition,
-              behavior: 'smooth'
-            });
-          }
-        }, 100);
-        this.closeMenu();
-      });
-    }
+    scrollToSection(sectionId, this.router, this.closeMenu.bind(this));
   }
 }
