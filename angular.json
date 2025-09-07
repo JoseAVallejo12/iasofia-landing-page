@@ -68,10 +68,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "extraction1:build:production"
+              "buildTarget": "iasofia-landing-page:build:production"
             },
             "development": {
-              "buildTarget": "extraction1:build:development"
+              "buildTarget": "iasofia-landing-page:build:development"
             }
           },
           "defaultConfiguration": "development"
